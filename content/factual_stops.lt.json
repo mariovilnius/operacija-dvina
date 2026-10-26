@@ -1,0 +1,480 @@
+[
+  {
+    "stop": "1",
+    "title": "Kodėl būtent Plokštinė",
+    "script": "Sveiki atvykę į Plokštinę. Jūs stovite Plokštinės miške, Platelių ežero pakrantėje. [S1] Šioje stotelėje trumpai sustosime prie vieno klausimo. Kodėl karinė bazė atsirado būtent čia, šiame miške? [S1] Ši vieta karinės bazės statybai labai tiko. [S1] Priežasčių buvo kelios, ir jūs jas galite lengvai įsiminti. [S1] Pirma, čia pakankamai didelis aukštis virš jūros lygio, beveik 170 m. [S1] Antra, čia lengvi gruntai, smėlis. [S1] Trečia, aplink buvo mažai gyventojų. [S1] Svarbi buvo ir vietos padėtis. [S1] Iš čia buvo galima kontroliuoti visą Europą. [S1] Raketą buvo galima nutaikyti į bet kurią Europos valstybę. [S1] Dabar pažvelkite į kelią, kuriuo jūs atvykote į Plokštinę. Jis taip pat susijęs su bazės statyba. [S1] Iškastas iš šachtų gruntas buvo pilamas ant naujai į Plokštinę tiesiamo kelio. [S1] Kol jį nutiesė, į bazę buvo važiuojama pro Jogaudų kaimą. [S1] Tai paprastas, bet svarbus šios vietos priminimas jums. Kalbame apie tai dalykiškai, prisimindami šios vietos karinę paskirtį. [S1] Prieš eidami toliau, dar kartą apsidairykite. Aukštis, smėlis, mažai gyventojų ir galimybė kontroliuoti Europą – tai priežastys, kurias verta įsiminti. [S1]",
+    "facts_used": [
+      {
+        "source": "S1",
+        "quote": "Platelių ežero pakrantėje esantis Plokštinės miškas, labai tiko karinės bazės statybai"
+      },
+      {
+        "source": "S1",
+        "quote": "pakankamai didelis aukštis virš jūros lygio (beveik 170 m.), lengvi gruntai (smėlis), mažai gyventojų"
+      },
+      {
+        "source": "S1",
+        "quote": "iš čia buvo galima kontroliuoti visą Europą"
+      },
+      {
+        "source": "S1",
+        "quote": "raketą nutaikyti į bet kurią Europos valstybę"
+      },
+      {
+        "source": "S1",
+        "quote": "Iškastas iš šachtų gruntas buvo pilamas ant naujai į Plokštinę tiesiamo kelio"
+      },
+      {
+        "source": "S1",
+        "quote": "kol jį nutiesė, į bazę buvo važiuojama pro Jogaudų kaimą"
+      }
+    ]
+  },
+  {
+    "stop": "2",
+    "title": "Bazės gimimas",
+    "script": "Sveiki atvykę į antrą stotelę. Čia pakalbėsime, kaip gimė Plokštinės bazė. Amerikiečiams pradėjus statyti požemines karines bazes, Sovietų Sąjungai reikėjo išlaikyti karinį prioritetą. [S1] Todėl Plokščių kaime 1960 m. rugsėjo mėn. pradėta statyti pirmoji Sovietų Sąjungoje požeminė raketinė bazė. [S1] Pažiūrėkite aplink. Vieta pasirinkta neatsitiktinai. [S1] Plokštinės miškas yra Platelių ežero pakrantėje. [S1] Čia buvo pakankamai didelis aukštis virš jūros lygio, beveik 170 m. [S1] Gruntai buvo lengvi, smėlis, o gyventojų buvo mažai. [S1] Iš čia taip pat buvo galima kontroliuoti visą Europą. [S1] Bazę statė 10 000 kareivių statybininkų. [S1] Įsivaizduokite jų darbą. 27 metrų gylio raketų paleidimo šachtas jie kasė kaip šulinius, kastuvais. [S1] Centrinį bloką įrengė kitaip. [S1] Centre išrausė duobę, ją išbetonavo ir sustatė įrenginius. [S1] Tada užklojo stogą ir užpylė jį skystu stiklu, kad į patalpas nepatektų vanduo. [S1] Galiausiai viską paslėpė po žemių sluoksniu. [S1] Iškastą iš šachtų gruntą pilė ant naujai į Plokštinę tiesiamo kelio. [S1] Statybos darbai baigti 1962 m. gruodžio 31 d. [S1] Tą vakarą, 10 valandą, raketininkai priėmė pirmąjį karinį budėjimą. [S1] Ačiū, kad klausotės. Prašome judėti prie kitos stotelės.",
+    "facts_used": [
+      {
+        "source": "S1",
+        "quote": "Amerikiečiams pradėjus statyti požemines karines bazes, Sovietų Sąjungai reikėjo išlaikyti karinį prioritetą."
+      },
+      {
+        "source": "S1",
+        "quote": "Plokščių kaime 1960 m. rugsėjo mėn. pradėta statyti pirmoji Sovietų Sąjungoje požeminė raketinė bazė."
+      },
+      {
+        "source": "S1",
+        "quote": "pakankamai didelis aukštis virš jūros lygio (beveik 170 m.), lengvi gruntai (smėlis), mažai gyventojų"
+      },
+      {
+        "source": "S1",
+        "quote": "iš čia buvo galima kontroliuoti visą Europą"
+      },
+      {
+        "source": "S1",
+        "quote": "Bazę statė 10 000 kareivių statybininkų, kurie 27 metrų gylio raketų paleidimo šachtas kasė kaip šulinius, kastuvais."
+      },
+      {
+        "source": "S1",
+        "quote": "O centrinį bloką įrengė centre išrausę duobę, ją išbetonavę ir sustatę įrenginius"
+      },
+      {
+        "source": "S1",
+        "quote": "Po to buvo užklotas stogas, kurį užpylė skystu stiklu, kad į patalpas nepatektų vanduo."
+      },
+      {
+        "source": "S1",
+        "quote": "Viską paslėpė po žemių sluoksniu."
+      },
+      {
+        "source": "S1",
+        "quote": "Iškastas iš šachtų gruntas buvo pilamas ant naujai į Plokštinę tiesiamo kelio"
+      },
+      {
+        "source": "S1",
+        "quote": "1962 metų gruodžio 31-ą dieną statybos darbai buvo baigti."
+      }
+    ]
+  },
+  {
+    "stop": "3",
+    "title": "Šešios tvoros",
+    "script": "Sustokite čia, jūs esate prie 6 tvorų stotelės. [S1] Visa raketų paleidimo aikštelės teritorija buvo aptverta tvora. [S1] Ją sudarė 6 apsauginės linijos. [S1] Prašau įsiminti šį skaičių. 6 linijos, o ne 1 tvora. [S1] Tose linijose buvo spygliuotos vielos. [S1] Taip pat buvo signalizacija. [S1] Buvo ir aukštos elektros įtampos dalis. [S1] Buvo ir kitų priemonių. [S1] Visas objektas užėmė apie 12 ha žemės plotą. [S2] Tas plotas buvo aptvertas net 6 apsauginėmis tvoromis. [S2] Raketų paleidimo aikštelė buvo aptverta kelių eilių spygliuota tvora. [S3] Tai buvo visiško slaptumo objektas. [S2] Pažvelkite į tai ramiai ir pagarbiai. Tai buvo apsauga, o ne paprasta tvora aplink teritoriją. [S1] Ekspozicijoje jūs galite pamatyti demonstruojamą ir atkurtą daugiapakopės elektroninės apsaugos sistemos fragmentą. [S3] Šis fragmentas padės jums geriau įsivaizduoti daugiapakopę elektroninę apsaugą. [S3] Prieš eidami toliau, suskaičiuokite mintyse iki 6. Tiek apsauginių linijų čia buvo. [S1] Dėkojame jums už dėmesį ir už tai, kad šią istoriją priimate rimtai bei pagarbiai.",
+    "facts_used": [
+      {
+        "source": "S1",
+        "quote": "Visa raketų paleidimo aikštelės teritorija buvo aptverta tvora."
+      },
+      {
+        "source": "S1",
+        "quote": "Ją sudarė 6 apsauginės linijos - spygliuotos vielos, signalizacijos, aukštos elektros įtampos ir kt."
+      },
+      {
+        "source": "S2",
+        "quote": "Visas objektas užėmė apie 12 ha žemės plotą, aptvertą net 6-mis apsauginėmis tvoromis."
+      },
+      {
+        "source": "S2",
+        "quote": "Visiško slaptumo objektui buvo reikalingas didelis kiekis karinės technikos"
+      },
+      {
+        "source": "S3",
+        "quote": "Raketų paleidimo aikštelė buvo aptverta kelių eilių spygliuota tvora."
+      },
+      {
+        "source": "S3",
+        "quote": "demonstruojamas ir atkurtas daugiapakopės elektroninės apsaugos sistemos fragmentas"
+      }
+    ]
+  },
+  {
+    "stop": "4",
+    "title": "Karinis miestelis",
+    "script": "Jūs esate prie buvusio karinio miestelio [S2]. Jis buvo įrengtas už 500 m nuo raketų paleidimo aikštelės [S2]. Čia buvo apie 20 pastatų [S2][S3]. Pažvelkite, kiek daug pastatų reikėjo kasdieniam gyvenimui [S1][S3]. Miestelyje gyveno apie 320 karininkų ir kareivių [S1]. Čia buvo štabas, kareivių korpusas ir karininkų viešbutis [S1]. Veikė 2 valgyklos, atskirai karininkams ir kareiviams [S1]. Dar buvo medicinos punktas, maisto sandėlis ir automobilių parkas [S1]. Netoliese buvo inžinerinės tarnybos ir raketų sandėlis [S1]. Ten buvo laikomos atsarginės dalys, izoliacija ir įvairūs prietaisai [S1]. Šalia aikštelės taip pat stovėjo valgykla ir 2 medinės kareivinės [S1]. Jose 3 parų budėjimo pamainas leisdavo 9 karininkai ir 22 kareiviai [S1]. Pamainos keisdavosi antradieniais ir penktadieniais [S1]. O po žeme pamainos keisdavosi kas 6 valandas [S1]. Vadai, kaip ir kiti karininkai, gyveno Plungėje, o budėti važiuodavo į bazę [S1]. Kitaip buvo 1968 m., kai buvo paskelbta karinė parengtis [S1]. Tada mėnesį laiko visi vadai ir kareiviai gyveno kariniame miestelyje [S1]. Vandenį bazei ir miesteliui pumpavo 2 galingi siurbliai prie Platelių ežero [S1]. Nuo komplekso iki Platelių ežero buvo iškasta 2,5 km ilgio vandentiekio tranšėja [S1].",
+    "facts_used": [
+      {
+        "source": "S2",
+        "quote": "už 500 m. nuo raketų paleidimo aikštelės buvo įrengtas miestelis su 20-čia pastatų"
+      },
+      {
+        "source": "S3",
+        "quote": "Plokštinėje buvo pastatytas karinis miestelis (apie 20 pastatų"
+      },
+      {
+        "source": "S1",
+        "quote": "Jame gyveno apie 320 karininkų ir kareivių."
+      },
+      {
+        "source": "S1",
+        "quote": "Čia buvo štabas, kareivių korpusas ir karininkų viešbutis"
+      },
+      {
+        "source": "S1",
+        "quote": "medicinos punktas, maisto sandėlis, automobilių parkas"
+      },
+      {
+        "source": "S1",
+        "quote": "jame buvo laikomos atsarginės dalys, izoliacija, įvairūs prietaisai"
+      },
+      {
+        "source": "S1",
+        "quote": "Šalia raketinės aikštelės buvo pastatyta valgykla, 2 medinės kareivinės."
+      },
+      {
+        "source": "S1",
+        "quote": "Jose savo 3 parų budėjimo pamainas leisdavo 9 karininkai ir 22 kareiviai."
+      },
+      {
+        "source": "S1",
+        "quote": "Pamainos keisdavosi antradieniais ir penktadieniais."
+      },
+      {
+        "source": "S1",
+        "quote": "Pamainos po žeme keisdavosi kas 6 valandas."
+      },
+      {
+        "source": "S1",
+        "quote": "Vadai gyveno Plungėje kaip ir kiti karininkai, tik budėti važiuodavo į bazę."
+      },
+      {
+        "source": "S1",
+        "quote": "mėnesį laiko visi vadai ir kareiviai gyveno bazės kariniame miestelyje"
+      },
+      {
+        "source": "S1",
+        "quote": "Prie ežero stovėjo du galingi siurbliai, kurie pumpuodavo vandenį į bazę ir į karinį miestelį."
+      },
+      {
+        "source": "S1",
+        "quote": "Nuo komplekso buvo iškasta 2,5 km ilgio vandentiekio tranšėja iki Platelių ežero."
+      }
+    ]
+  },
+  {
+    "stop": "5",
+    "title": "Raketa R-12",
+    "script": "Sustokime prie šachtų gaubtų. Pažvelkite į juos atidžiai. Šie gaubtai buvo pritaikyti atlaikyti atominės bombos sprogimą. [S3] Juos specialiais bėgiais buvo galima nustumti per 30 minučių. [S3] Požeminių šachtų skersmuo buvo apie 5 m. [S3] Į šachtas buvo nuleistos 4 R-12 termobranduolinės raketos. [S1] Amerikiečiai šias raketas vadino SS4. [S1] Įsivaizduokite jų dydį. Raketos aukštis su galvute buvo 23 metrai. [S1] Iš jų 19 m sudarė raketa-nešėja, o 4 m – raketos galvutė. [S1] Raketos skersmuo buvo 1,65 m. [S1] Vienos raketos galingumas siekė nuo 1 iki 2,3 megatonos. [S1] Tai buvo vidutinio nuotolio raketos. [S1] Jos galėjo nuskristi iki 2000 km. [S1] Raketos buvo užpildomos angliavandeniliniais degalais TM-185 ir oksidatoriumi AK-27 I. [S1] Šio oksidatoriaus sudėtis buvo 27% azoto tetraoksido ir 73% azoto rūgšties. [S1] Paleidimui buvo naudotas kuras saminas. [S1] Bazės veikimo periodu raketos buvo nukreiptos į Norvegiją, Didžiąją Britaniją, Ispaniją, Vakarų Vokietiją ir Turkiją. [S1] Kas 3-4 metus raketų nutaikymo kryptis buvo keičiama. [S1] Tos pačios raketos galėjo būti eksploatuojamos nuo 5 iki 15 metų. [S1] Plokštinės bazėje jos buvo pakeistos 1 kartą per 16 metų. [S1] Prašome tai prisiminti ramiai ir pagarbiai.",
+    "facts_used": [
+      {
+        "source": "S3",
+        "quote": "gaubtai buvo pritaikyti atlaikyti atominės bombos sprogimą, juos specialiais bėgiais buvo galima nustumti per 30 minučių"
+      },
+      {
+        "source": "S3",
+        "quote": "apie 5 m skersmens"
+      },
+      {
+        "source": "S1",
+        "quote": "Į šachtas buvo nuleistos 4 R-12 termobranduolinės raketos."
+      },
+      {
+        "source": "S1",
+        "quote": "Amerikiečiai šias raketas vadino SS4."
+      },
+      {
+        "source": "S1",
+        "quote": "aukštis su galvute - 23 metrai (19 m raketa-nešėja ir 4 m raketos galvutė); skersmuo – 1,65 m."
+      },
+      {
+        "source": "S1",
+        "quote": "1 raketos galingumas – siekė nuo 1 iki– 2,3 megatonos"
+      },
+      {
+        "source": "S1",
+        "quote": "Raketos buvo vidutinio nuotolio, jos galėjo nuskristi iki 2000 km"
+      },
+      {
+        "source": "S1",
+        "quote": "Raketos užpildomos angliavandeniliniais degalų TM-185 ir oksidatoriaus AK-27 I (27% azoto tetraoksido, 73% azoto rūgšties junginys) mišiniu, o paleidimui naudotas kuras saminas."
+      },
+      {
+        "source": "S1",
+        "quote": "raketos buvo nukreiptos į šias vakarų šalis: Norvegiją, Didžiąją Britaniją, Ispaniją, Vakarų Vokietiją ir Turkiją"
+      },
+      {
+        "source": "S1",
+        "quote": "Kas 3-4 metus raketų nutaikymo kryptis buvo keičiama."
+      },
+      {
+        "source": "S1",
+        "quote": "Tos pačios raketos galėjo būti eksploatuojamos nuo 5 iki 15 metų."
+      },
+      {
+        "source": "S1",
+        "quote": "Plokštinės bazėje jos buvo pakeistos 1 kartą per 16 metų."
+      }
+    ]
+  },
+  {
+    "stop": "6",
+    "title": "Po žeme",
+    "script": "Jūs stovite po žeme, centriniame technologiniame bloke. [S1] Įsivaizduokite: šį bloką įrengė centre išrausę duobę ir ją išbetonavę. [S1] Tada čia sustatė įrenginius. [S1] Čia veikė elektros ir radijo stotys. [S1] Čia buvo vadovavimo pultas ir technologinis blokas. [S1] Čia įrengė ir poilsio kambarį budintiesiems. [S1] Paklausykite, kaip viską slėpė. Baigus darbus, bloką uždengė stogu. [S1] Stogą užpylė skystu stiklu, kad į patalpas nepatektų vanduo. [S1] Tada viską paslėpė po žemių sluoksniu. [S1] Požeminėje centrinėje valdymo aparatinėje buvo įrengti raketų valdymo punktai. [S3] Įvairias patalpas jungė požeminių koridorių tinklas. [S3] Dabar pažvelkite į budėjimo ritmą. Po žeme pamainos keisdavosi kas 6 valandas. [S1] Šalia raketų paleidimo aikštelės stovėjo 2 medinės kareivinės. [S1] Jose savo 3 parų budėjimo pamainas leisdavo 9 karininkai ir 22 kareiviai. [S1] Pamainos keisdavosi antradieniais ir penktadieniais. [S1] Įsivaizduokite paskutinę statybų dieną. 1962 metų gruodžio 31-ą dieną statybos darbai buvo baigti. [S1] Vakare, 10 valandą, prieš pat Naujuosius metus, raketininkai priėmė pirmąjį karinį budėjimą. [S1] Prašome neskubėti. Apžiūrėkite šias patalpas ir pagalvokite apie darbą po žeme.",
+    "facts_used": [
+      {
+        "source": "S1",
+        "quote": "po žeme įrengtas technologinis blokas"
+      },
+      {
+        "source": "S1",
+        "quote": "centrinį bloką įrengė centre išrausę duobę, ją išbetonavę ir sustatę įrenginius"
+      },
+      {
+        "source": "S1",
+        "quote": "elektros ir radijo stotys, vadovavimo pultas, technologinis blokas, poilsio kambarys budintiesiems"
+      },
+      {
+        "source": "S1",
+        "quote": "užpylė skystu stiklu, kad į patalpas nepatektų vanduo"
+      },
+      {
+        "source": "S1",
+        "quote": "Viską paslėpė po žemių sluoksniu."
+      },
+      {
+        "source": "S3",
+        "quote": "Požeminėje centrinėje valdymo aparatinėje buvo įrengti raketų valdymo punktai."
+      },
+      {
+        "source": "S3",
+        "quote": "Įvairias patalpas jungė požeminių koridorių tinklas."
+      },
+      {
+        "source": "S1",
+        "quote": "Pamainos po žeme keisdavosi kas 6 valandas."
+      },
+      {
+        "source": "S1",
+        "quote": "Jose savo 3 parų budėjimo pamainas leisdavo 9 karininkai ir 22 kareiviai."
+      },
+      {
+        "source": "S1",
+        "quote": "Pamainos keisdavosi antradieniais ir penktadieniais."
+      },
+      {
+        "source": "S1",
+        "quote": "1962 metų gruodžio 31-ą dieną statybos darbai buvo baigti."
+      },
+      {
+        "source": "S1",
+        "quote": "Vakare, 10 valandą, prieš pat Naujuosius metus"
+      }
+    ]
+  },
+  {
+    "stop": "7",
+    "title": "Kuba ir Šateikiai",
+    "script": "Dabar jūs susipažinsite su Šateikiais. Plokštinės požeminė ir Šateikių antžeminė raketinės bazės sudarė 79-tą raketinį pulką. [S1] Pulko štabas buvo Šateikiuose. [S1] Šateikiuose raketos buvo dislokuotos anksčiau nei Plokštinėje, 1961 m. [S1] Ten buvo pastatytas sandėlis raketoms-nešėjoms, nes Plokštinėje nebuvo vietos. [S1] Šateikių bazė turėjo ir dar 8, tik antžeminio tipo raketas. [S1] Pirmasis raketinio pulko vadas buvo ukrainietis Kalisničenko. [S1] Jis nenorėjo dalyvauti Kubos operacijoje 1962 m., dėl to buvo atleistas iš tarnybos. [S1] Į jo vietą paskirtas Sidorovas. [S1] Vėliau pulko vadais buvo Saloha, Ramaniuk ir Jereskovskij. [S1] Vadai gyveno Plungėje kaip ir kiti karininkai, tik budėti važiuodavo į bazę. [S1] O dabar paklausykite apie Kubą. 79-to raketinio pulko kariškiai taip pat dalyvavo Kubos įvykiuose. [S1] 1962 m. rugsėjo mėnesį iš Šateikių buvo gabenamos raketos. [S1] Viskas buvo įslaptinta. [S1] Raketos buvo kraunamos naktį, o kareiviai dirbo, apsivilkę civiliais rūbais. [S1] Vėliau raketos išgabentos į Sevastopolį, pakrautos į prekinius laivus ir išplukdytos į Havaną. [S1] Jie Kubos salos centre, miške, atvirame grunte, išlieję betoninį pagrindą, statė raketas. [S1] Pulko kariškiai raketas statė centrinės Kubos miesteliuose iki 1963 m. sausio. [S1]",
+    "facts_used": [
+      {
+        "source": "S1",
+        "quote": "Plokštinės požeminė ir Šateikių antžeminė raketinės bazės sudarė 79-tą raketinį pulką."
+      },
+      {
+        "source": "S1",
+        "quote": "Pulko štabas buvo Šateikiuose."
+      },
+      {
+        "source": "S1",
+        "quote": "Šateikiuose raketos buvo dislokuotos anksčiau nei Plokštinėje - 1961 m."
+      },
+      {
+        "source": "S1",
+        "quote": "Raketos-nešėjos sandėliuotos Šateikiuose (kitas antžeminių raketų paleidimo kompleksas), nes Plokštinėje nebuvo vietos."
+      },
+      {
+        "source": "S1",
+        "quote": "Šateikiuose jų saugojimui buvo pastatytas sandėlis."
+      },
+      {
+        "source": "S1",
+        "quote": "Šateikių bazė turėjo ir dar 8, tik antžeminio tipo raketas."
+      },
+      {
+        "source": "S1",
+        "quote": "Pirmasis raketinio pulko vadas buvo ukrainietis Kalisničenko."
+      },
+      {
+        "source": "S1",
+        "quote": "Jis nenorėjo dalyvauti Kubos operacijoje 1962 m., dėl to buvo atleistas iš tarnybos, o į jo vietą paskirtas Sidorovas."
+      },
+      {
+        "source": "S1",
+        "quote": "Vėliau pulko vadais buvo Saloha, Ramaniuk ir Jereskovskij."
+      },
+      {
+        "source": "S1",
+        "quote": "Vadai gyveno Plungėje kaip ir kiti karininkai, tik budėti važiuodavo į bazę."
+      },
+      {
+        "source": "S1",
+        "quote": "79-to raketinio pulko kariškiai taip pat dalyvavo Kubos įvykiuose."
+      },
+      {
+        "source": "S1",
+        "quote": "Ten, 1962 m. rugsėjo mėnesį, iš Šateikių buvo gabenamos raketos."
+      },
+      {
+        "source": "S1",
+        "quote": "Viskas buvo įslaptinta."
+      },
+      {
+        "source": "S1",
+        "quote": "Raketos buvo kraunamos naktį, o kareiviai dirbo, apsivilkę civiliais rūbais."
+      },
+      {
+        "source": "S1",
+        "quote": "Vėliau raketos išgabentos į Sevastopolį, pakrautos į prekinius laivus ir išplukdytos į Havaną."
+      },
+      {
+        "source": "S1",
+        "quote": "Jie Kubos salos centre, miške, atvirame grunte, išlieję betoninį pagrindą, statė raketas."
+      },
+      {
+        "source": "S1",
+        "quote": "79-to raketinio pulko kariškiai raketas statė centrinės Kubos miesteliuose iki 1963 m. sausio."
+      }
+    ]
+  },
+  {
+    "stop": "8",
+    "title": "Uždarymas",
+    "script": "Jūs klausotės stotelės apie uždarymą. Prieš tęsdami, sustokite ir ramiai apsižvalgykite aplink. Čia kalbėsime tik apie paskutinius bazės veiklos etapus. Pirmiausia grįžkime į 1968 metus. 1968 m. per Čekoslovakijos įvykius (Prahos pavasaris) buvo paskelbta karinė parengtis. [S1] Mėnesį laiko visi vadai ir kareiviai gyveno bazės kariniame miestelyje. [S1] Pagalvokite apie tą mėnesį kariniame miestelyje. [S1] Vis dėlto svarbu pabrėžti vieną dalyką. Per raketinės bazės egzistavimo laikotarpį nė viena raketa nebuvo paleista. [S1] Prisiminkite šį sakinį, kai žvelgsite į aplinką. Tai yra esminė šios istorijos pabaigos dalis. Dabar pereikime prie 1978 metų. Kariškiai iš Plokštinės termobranduolinių raketų paleidimo komplekso pasitraukė 1978 m. birželio 18 d. [S1] Tą pačią datą bazė buvo uždaryta. [S1][S3] Prieš uždarymą Jungtinių Amerikos Valstijų žvalgyba išsiaiškino bazės vietą. [S3] Uždarymas nereiškė, kad viskas baigėsi tą pačią dieną. [S3] Pagrindinė įranga demontuota 1981. [S3] Kompleksą aptarnavusi raketinė divizija galutinai perdislokuota 1984. [S3] Dabar pažvelkite į tai, kas liko po pasitraukimo. Pasitraukus sovietų kariškiams, apleista ir neprižiūrima bazė buvo labai nuniokota metalo vagių. [S3] Šiandien jūsų apsilankymas padeda šią istoriją išsaugoti atmintyje. Ačiū, kad klausėtės pagarbiai ir dėmesingai.",
+    "facts_used": [
+      {
+        "source": "S1",
+        "quote": "1968 m. per Čekoslovakijos įvykius (Prahos pavasaris), buvo paskelbta karinė parengtis, mėnesį laiko visi vadai ir kareiviai gyveno bazės kariniame miestelyje."
+      },
+      {
+        "source": "S1",
+        "quote": "Per raketinės bazės egzistavimo laikotarpį nė viena raketa nebuvo paleista."
+      },
+      {
+        "source": "S1",
+        "quote": "Kariškiai iš Plokštinės termobranduolinių raketų paleidimo komplekso pasitraukė 1978 m. birželio 18 d."
+      },
+      {
+        "source": "S3",
+        "quote": "1978 Jungtinių Amerikos Valstijų žvalgybai išsiaiškinus bazės vietą, 06 18 bazė uždaryta, pagrindinė įranga demontuota 1981, kompleksą aptarnavusi raketinė divizija galutinai perdislokuota 1984."
+      },
+      {
+        "source": "S3",
+        "quote": "Pasitraukus sovietų kariškiams apleista ir neprižiūrima bazė buvo labai nuniokota metalo vagių."
+      }
+    ]
+  },
+  {
+    "stop": "9",
+    "title": "Nuo griuvėsių iki muziejaus",
+    "script": "Sveiki. Pasitraukus sovietų kariškiams, apleista ir neprižiūrima bazė buvo labai nuniokota metalo vagių. [S3] 1992 metais bazė atiteko Žemaitijos nacionaliniam parkui. [S3] 1996 bazė minimaliai pritaikyta lankytojams, pradėjo veikti nedidelė Militarizmo ekspozicija. [S3] 2008 ją aplankė apie 16 000 žmonių, tada nuspręsta įkurti šiuolaikišką muziejų. [S3] Bazė rekonstruota, atnaujinti šachtų gaubtai. [S3] Lankytojams pritaikyta viena šachta, kitos trys, labai suniokotos, buvo konservuotos. [S3] Ekspozicija papildyta, pastatytas administracinis pastatas – informacijos centras. [S3] Šaltojo karo muziejus oficialiai atidarytas 2012 pabaigoje. [S3] Šiandien buvusiose aparatinėse ir kitose patalpose įrengtos kelios ekspozicijos. [S3] Istorinė ekspozicija supažindina jus su Šaltuoju karu ir nusiginklavimu. [S3] Ginkluotės ekspozicijoje jūs matote atkurtą daugiapakopės elektroninės apsaugos sistemos fragmentą. [S3] Raketinės technikos ekspozicijoje demonstruojamas vienintelis tikslus balistinės raketos SS-4 maketas ir bunkerio vado kabinetas. [S3] Dar jūsų laukia atkurto ryšio mazgo aparatūra, politinės propagandos ir civilinės gynybos ekspozicijos. [S3] Pamatysite ir branduolinio sprogimo bei jo pasekmių imitavimo ekspoziciją su maketu ir vaizdo instaliacija. [S3] Elektros jėgainės ekspozicijoje yra galingo elektros generatoriaus likučiai. [S3] Siauru koridoriumi jūs pasieksite šachtą, kurioje beveik dvidešimt metų laikyta kovinė raketa. [S3] Ačiū jums, kad keliavote pagarbiai ir atidžiai.",
+    "facts_used": [
+      {
+        "source": "S3",
+        "quote": "Pasitraukus sovietų kariškiams apleista ir neprižiūrima bazė buvo labai nuniokota metalo vagių."
+      },
+      {
+        "source": "S3",
+        "quote": "1992 raketų bazė atiteko Žemaitijos nacionaliniam parkui."
+      },
+      {
+        "source": "S3",
+        "quote": "1996 bazė minimaliai pritaikyta lankytojams, pradėjo veikti nedidelė Militarizmo ekspozicija."
+      },
+      {
+        "source": "S3",
+        "quote": "2008 ją aplankė apie 16 000 žmonių"
+      },
+      {
+        "source": "S3",
+        "quote": "Bazė rekonstruota, atnaujinti šachtų gaubtai"
+      },
+      {
+        "source": "S3",
+        "quote": "lankytojams pritaikyta viena šachta (kitos trys, labai suniokotos, buvo konservuotos)"
+      },
+      {
+        "source": "S3",
+        "quote": "pastatytas administracinis pastatas (informacijos centras)"
+      },
+      {
+        "source": "S3",
+        "quote": "Šaltojo karo muziejus oficialiai atidarytas 2012 pabaigoje."
+      },
+      {
+        "source": "S3",
+        "quote": "istorinė (supažindina su Šaltuoju karu, nusiginklavimu)"
+      },
+      {
+        "source": "S3",
+        "quote": "ginkluotės (demonstruojamas ir atkurtas daugiapakopės elektroninės apsaugos sistemos fragmentas)"
+      },
+      {
+        "source": "S3",
+        "quote": "raketinės technikos (demonstruojamas ir vienintelis tikslus balistinės raketos SS-4 maketas, bunkerio vado kabinetas)"
+      },
+      {
+        "source": "S3",
+        "quote": "atkurto ryšio mazgo aparatūros"
+      },
+      {
+        "source": "S3",
+        "quote": "branduolinio sprogimo ir jo pasekmių imitavimo (maketas ir vaizdo instaliacija)"
+      },
+      {
+        "source": "S3",
+        "quote": "komplekso elektros jėgainės (yra galingo elektros generatoriaus likučiai)"
+      },
+      {
+        "source": "S3",
+        "quote": "siauru koridoriumi pasiekiama šachta"
+      },
+      {
+        "source": "S3",
+        "quote": "joje beveik dvidešimt metų laikyta kovinė raketa"
+      }
+    ]
+  },
+  {
+    "stop": "10",
+    "title": "Vanduo iš Platelių ežero",
+    "script": "Sveiki atvykę į baigiamąją stotelę. Jūs jau daug pamatėte ir išgirdote. Dabar sustokime prie dar vienos temos. Kalbėsime apie vandenį. Vanduo taip pat buvo šios vietos infrastruktūros dalis. [S1] Požeminės raketų paleidimo aikštelės aptarnavimui Plokštinės miškuose buvo įrengtas visas kompleksas papildomos infrastruktūros. [S1] Viena iš šio komplekso dalių buvo vandentiekis iki Platelių ežero. [S1] Nuo komplekso buvo iškasta 2,5 km ilgio vandentiekio tranšėja iki Platelių ežero. [S1] Įsivaizduokite šį atstumą. Tai 2,5 km atstumas nuo komplekso iki ežero. [S1] Taip pat buvo pastatyta vandens perpumpavimo stotis. [S1] Prie ežero stovėjo 2 galingi siurbliai. [S1] Jie pumpuodavo vandenį į bazę ir į karinį miestelį. [S1] Taigi tas pats vanduo pasiekdavo ir bazę, ir karinį miestelį. [S1] Ši detalė padeda jums pamatyti visumą. Net siurbliai ir stotis buvo šios infrastruktūros dalis. [S1] Čia mūsų pasakojimas baigiasi. Ačiū jums, kad klausėtės. Prašome šią istoriją priimti pagarbiai. Kviečiame jus tęsti kelionę Platelių apylinkėse. Linkime jums ramaus ir prasmingo buvimo čia. Iki kitų susitikimų.",
+    "facts_used": [
+      {
+        "source": "S1",
+        "quote": "buvo įrengtas visas kompleksas papildomos infrastruktūros"
+      },
+      {
+        "source": "S1",
+        "quote": "Nuo komplekso buvo iškasta 2,5 km ilgio vandentiekio tranšėja iki Platelių ežero"
+      },
+      {
+        "source": "S1",
+        "quote": "Pastatyta vandens perpumpavimo stotis"
+      },
+      {
+        "source": "S1",
+        "quote": "Prie ežero stovėjo du galingi siurbliai, kurie pumpuodavo vandenį į bazę ir į karinį miestelį"
+      }
+    ]
+  }
+]

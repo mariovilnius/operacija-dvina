@@ -1,0 +1,180 @@
+[
+  {
+    "claim": "Bazę statė tik estai, kad nesusikalbėtų su vietiniais, o lietuvių į statybininkus neėmė",
+    "verdict": "LEGENDA",
+    "reveal": "Tu išgirdai legendą, o ne tikslų faktą. [T3] Kajetonas Meškauskas, statybos dalinio gydytojas, pasakoja, kad viename batalione pradžioje tarnavo tik lietuviai, kitame – estai, trečiame – latviai. [T3] Į kelių tiesimo batalioną, anot jo, žmones rinko nepaisydami tautybės. [T3] Visuotinė lietuvių enciklopedija nurodo, kad statyboje dalyvavo apie 10 000 kareivių, daugiausia estų. [S3] Gidė Judita Šatkauskienė, užaugusi Beržore, pasakoja apie įvairių tautybių kareivius ir aiškina, esą estai turėjo sunkiau susikalbėti su vietiniais. [T5]",
+    "sources": [
+      "T3",
+      "T5",
+      "S3"
+    ],
+    "evidence": [
+      {
+        "source": "T3",
+        "quote": "Viename batalione pradžioje tarnavo tik lietuviai, kitame – estai, trečiame – latviai"
+      }
+    ],
+    "xp": 50,
+    "mission": 1
+  },
+  {
+    "claim": "Visos keturios šachtos buvo iškastos per 8 mėnesius",
+    "verdict": "LEGENDA",
+    "reveal": "Tai legenda [T3]. Kajetonas Meškauskas, statybos dalinio gydytojas, patikslino, kad vien pirmąją šachtą kareiviai rausė metus [T3]. Tai reiškia, kad aštuonių mėnesių versija apie visas keturias neatitinka jo patikslinimo [T3]. Oficialus pasakojimas patvirtina daug ilgesnes statybas: bazę pradėjo statyti 1960 metų rugsėjį, o darbus baigė 1962 metų gruodžio 31 dieną [S1]. Todėl tu teisingai suabejojai šiuo greitų statybų pasakojimu [T3].",
+    "sources": [
+      "T3",
+      "S1"
+    ],
+    "evidence": [
+      {
+        "source": "T3",
+        "quote": "vien pirmąją kareiviai rausė metus"
+      }
+    ],
+    "xp": 50,
+    "mission": 1
+  },
+  {
+    "claim": "Kelias į bazę išklotas skylėtomis betono plokštėmis tam, kad pro skyles želianti žolė slėptų jį nuo palydovų",
+    "verdict": "LIUDIJIMAS",
+    "reveal": "Žiūrėk atidžiai: tai yra liudijimas, o ne oficialiai patvirtintas faktas [T5]. LRT.lt straipsnyje, kuriame pasakoja Šaltojo karo muziejaus gidė Judita Šatkauskienė, užaugusi Beržore, ir kraštotyrininkas Eugenijus Bunka, kelias apibūdinamas kaip išklotas skylėto betono plokštėmis [T5]. Ten pat aiškinama, kad per skyles žėlusi žolė turėjo slėpti įvažiavimą į karinį objektą nuo JAV palydovų [T5]. Todėl rinkis atsakymą LIUDIJIMAS: versija skamba šiame pasakojime, bet oficialaus patvirtinimo jai nepateikiama [T5].",
+    "sources": [
+      "T5"
+    ],
+    "evidence": [
+      {
+        "source": "T5",
+        "quote": "žėlusi žolė slėpė įvažiavimą į karinį objektą nuo JAV palydovų"
+      }
+    ],
+    "xp": 50,
+    "mission": 1
+  },
+  {
+    "claim": "Studentas su žiūronu stebėjo paukščius prie bazės ir buvo tardomas tris paras",
+    "verdict": "LIUDIJIMAS",
+    "reveal": "Tai – liudijimas, ne oficialiai patvirtintas faktas. Šaltojo karo muziejaus gidė Judita Šatkauskienė, užaugusi Beržore, LRT.lt pasakojo prisimenanti vieno muziejaus lankytojo istoriją [T5]. Anot jos perpasakojimo, tas žmogus, būdamas studentas, Plateliuose tėvų dovanotu žiūronu stebėjo paukščius, kol jį užklupo kariškiai [T5]. Jį tardė tris paras, kol patikėjo paaiškinimu, bet žiūrono negrąžino [T5]. Todėl vertink tai kaip liudijimą, ne kaip oficialiai įrodytą faktą [T5].",
+    "sources": [
+      "T5"
+    ],
+    "evidence": [
+      {
+        "source": "T5",
+        "quote": "Studentą užklupę kariškiai tardė jį tris paras"
+      }
+    ],
+    "xp": 50,
+    "mission": 2
+  },
+  {
+    "claim": "Veterinaras į bazę buvo įvežamas pasislėpęs po malkomis sunkvežimyje",
+    "verdict": "LIUDIJIMAS",
+    "reveal": "Tai – liudijimas. Taip pasakoja Stanislovas Mikašauskas, buvęs veterinarijos gydytojas, vėliau kolūkio pirmininkas [T2]. Anot jo, bazės vadai jį samdė, kai skubiai prireikė pagalbos prie kiaulių [T2]. Pirmą kartą jį sunkvežimiu apkrovė malkomis ir taip įvežė į teritoriją, o po darbo išvedė pro tvorą miške [T2]. Jis aiškina, kad nors pasirašydavo dokumentus, patekimas buvo nelegalus [T2]. Todėl tu šią įsimintiną istoriją vertink atsargiai: tai vieno žmogaus prisiminimas, o ne oficialiai patvirtintas faktas [T2].",
+    "sources": [
+      "T2"
+    ],
+    "evidence": [
+      {
+        "source": "T2",
+        "quote": "Jie mane sunkvežimyje apkrovė malkomis ir įvežė į teritoriją"
+      }
+    ],
+    "xp": 50,
+    "mission": 2
+  },
+  {
+    "claim": "Pro kaimus naktimis važiuojant kolonoms gyventojams liepdavo užsitraukti užuolaidas tik tam, kad niekas nepamatytų įrangos",
+    "verdict": "LEGENDA",
+    "reveal": "Legenda: atkreipk dėmesį į žodį „tik“ – užuolaidas užsitraukti tikrai liepdavo, bet ne vien tam, kad paslėptų įrangą [T5]. Kajetonas Meškauskas, statybos dalinio gydytojas, pasakoja, kad naktimis veždavo nuodingą raketinį kurą, kurio garai dėl padidėjusio slėgio verždavosi pro cisternų vožtuvus [T3]. Dėl to žmones varydavo toliau nuo kelio, o pakelės gyventojams liepdavo nelįsti prie langų ir juos užsidaryti [T3]. Judita Šatkauskienė, gidė, užaugusi Beržore, prisimena tokį įsakymą vežant įrangą [T5]. Kraštotyrininkas Eugenijus Bunka papildo, kad gabentas ir žmogui labai nuodingas raketinis benzinas [T5].",
+    "sources": [
+      "T3",
+      "T5"
+    ],
+    "evidence": [
+      {
+        "source": "T3",
+        "quote": "naktimis veždavo raketinį kurą"
+      }
+    ],
+    "xp": 50,
+    "mission": 3
+  },
+  {
+    "claim": "Slaptame angare Plokštinės miške buvo laikomos branduolinės raketų galvutės",
+    "verdict": "IŠ DALIES",
+    "reveal": "Pusiau taip. Vietinis gyventojas Stanislovas Puidokas pasakoja, kad kas buvo angare, niekas nežinojo, o gandų buvo visokių – ir apie raketų galvutes [T1]. Oficialus Žemaitijos nacionalinio parko direkcijos šaltinis patvirtina, kad 8 raketų galvutės buvo saugomos karinės bazės sandėlyje [S1]. Bet ar tai buvo būtent tas slaptas angaras – šaltiniai nesako. Galvutės čia buvo, o angaro paslaptis lieka neatskleista.",
+    "sources": [
+      "T1",
+      "S1"
+    ],
+    "evidence": [
+      {
+        "source": "S1",
+        "quote": "8 raketų galvutės (branduoliniai užtaisai) buvo saugomos karinės bazės sandėlyje"
+      },
+      {
+        "source": "S1",
+        "quote": "8 raketų galvutės (branduoliniai užtaisai) buvo saugomos karinės bazės sandėlyje"
+      }
+    ],
+    "xp": 50,
+    "mission": 4,
+    "edited_by_hand": true
+  },
+  {
+    "claim": "Iš Plokštinės bazės po mišku ėjo ilgi slapti tuneliai",
+    "verdict": "NEĮRODYTA",
+    "reveal": "Šito niekas nėra įrodęs. Buvęs veterinaras ir kolūkio pirmininkas Stanislovas Mikašauskas medžiodavo su bazės karininkais, bet apie bazę jie tylėdavo [T2]. Apie tunelius, sako jis, kalbėjo kai kas, tačiau pats abejoja: jei jie būtų buvę, kas nors jais būtų pravažiavęs [T2]. Oficialūs šaltiniai mini tik požeminių koridorių tinklą, jungusį bazės patalpas [S3]. Ilgi tuneliai po mišku kol kas lieka gandu.",
+    "sources": [
+      "T2",
+      "S3"
+    ],
+    "evidence": [
+      {
+        "source": "T2",
+        "quote": "jeigu būtų buvę tie tuneliai, vis tiek būtų kas nors jais pravažiavęs"
+      },
+      {
+        "source": "S3",
+        "quote": "Įvairias patalpas jungė požeminių koridorių tinklas"
+      }
+    ],
+    "xp": 50,
+    "mission": 5,
+    "edited_by_hand": true
+  },
+  {
+    "claim": "Apie Šateikių bazės statybą „Amerikos balsui“ išplepėjo vietos klebonas",
+    "verdict": "LEGENDA",
+    "reveal": "Tai legenda – ne klebonas čia kaltas, nors įtarimas pirmiausia krito ant jo. [T3] Taip pasakoja Kajetonas Meškauskas, statybos dalinio gydytojas, prisiminęs Šateikių bazės statybos pradžią. [T3] Pasak jo, kontržvalgyba pradėjo tikrinti kleboną ir jam artimus žmones, bet greitai paaiškėjo kitas informacijos kelias. [T3] Statybininkų dalinio vado žmona vietos moterims gyrėsi savo vyru ir jo darbu, o kalbos pasiekė tuos, kam tokios žinios buvo reikalingos. [T3] Todėl, kai tu išgirsi, kad paslaptį išdavė pirmas įtartas žmogus, patikrink, ką liudininkas sako apie tyrimo pabaigą. [T3]",
+    "sources": [
+      "T3"
+    ],
+    "evidence": [
+      {
+        "source": "T3",
+        "quote": "Iš pradžių ėmėsi vietos klebono ir jo aplinkos"
+      }
+    ],
+    "xp": 50,
+    "mission": 6
+  },
+  {
+    "claim": "Kariškiai bazę paliko 1979 metais.",
+    "verdict": "ŠALTINIAI NESUTARIA",
+    "reveal": "Čia šaltiniai nesutaria, todėl tau svarbu nesustoti ties viena data. Oficialus Žemaitijos nacionalinio parko direkcijos pasakojimas sako, kad kariškiai pasitraukė 1978 m. birželio 18 d. [S1] Visuotinė lietuvių enciklopedija tą pačią dieną nurodo kaip bazės uždarymo datą. [S3] O kraštotyrininkas Eugenijus Bunka prisimena įėjęs į bazę praėjus trims dienoms po kariškių pasitraukimo 1979 m. [T5] Tau belieka užfiksuoti šį nesutapimą, o ne rinktis vieną datą iš anksto.",
+    "sources": [
+      "S1",
+      "S3",
+      "T5"
+    ],
+    "evidence": [
+      {
+        "source": "S1",
+        "quote": "pasitraukė 1978 m. birželio 18 d."
+      }
+    ],
+    "xp": 50,
+    "mission": 7
+  }
+]

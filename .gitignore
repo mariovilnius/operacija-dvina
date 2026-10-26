@@ -1,0 +1,9 @@
+# Source pages belong to their publishers; fetch them locally with pipeline/fetch_sources.py
+data/raw/
+
+# Secrets
+.env
+*.key
+
+__pycache__/
+*.pyc

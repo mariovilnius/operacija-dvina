@@ -1,0 +1,426 @@
+{
+  "episodes": [
+    {
+      "n": 1,
+      "title": "Miškas, kurio nebuvo žemėlapiuose",
+      "script": "Įsivaizduok: tu eini Plokštinės mišku ir po kojomis – slapta bazė. [S1] Kodėl būtent čia? Amerikiečiams pradėjus statyti požemines karines bazes, Sovietų Sąjungai reikėjo išlaikyti karinį prioritetą. [S1] Vieta prie Platelių ežero tiko dėl beveik 170 metrų aukščio virš jūros lygio, lengvų smėlio gruntų ir mažo gyventojų skaičiaus. [S1] Čia 1960 metų rugsėjį pradėta statyti pirmoji Sovietų Sąjungoje požeminė raketinė bazė. [S1] Bazę statė 10 000 kareivių statybininkų. [S1] Jie kastuvais, kaip šulinius, kasė 27 metrų gylio raketų paleidimo šachtas. [S1] Kompleksą sudarė po žeme įrengtas technologinis blokas ir aplink jį iškastos 4 požeminės raketų paleidimo šachtos. [S1] Centre išrausė duobę, ją išbetonavo, sustatė įrenginius, uždėjo stogą ir užpylė jį skystu stiklu, kad nepatektų vanduo. [S1] Tada viską paslėpė po žemių sluoksniu. [S1] Darbai baigti 1962 metų gruodžio 31 dieną, o tą vakarą, 22 valandą, prasidėjo pirmasis karinis budėjimas. [S1] Bet kas tavęs laukia prie vienos iš tų šachtų – sužinosi tik atvykus į Plokštinę?",
+      "cliffhanger": "Bet kas tavęs laukia prie vienos iš tų šachtų – sužinosi tik atvykus į Plokštinę?",
+      "facts_used": [
+        {
+          "source": "S1",
+          "quote": "Šaltojo karo ekspozicija įsikūrusi Plokštinės miške, buvusioje sovietinės armijos požeminėje termobranduolinių raketų paleidimo bazėje"
+        },
+        {
+          "source": "S1",
+          "quote": "Amerikiečiams pradėjus statyti požemines karines bazes, Sovietų Sąjungai reikėjo išlaikyti karinį prioritetą."
+        },
+        {
+          "source": "S1",
+          "quote": "Platelių ežero pakrantėje esantis Plokštinės miškas, labai tiko karinės bazės statybai: pakankamai didelis aukštis virš jūros lygio (beveik 170 m.), lengvi gruntai (smėlis), mažai gyventojų."
+        },
+        {
+          "source": "S1",
+          "quote": "Plokščių kaime 1960 m. rugsėjo mėn. pradėta statyti pirmoji Sovietų Sąjungoje požeminė raketinė bazė."
+        },
+        {
+          "source": "S1",
+          "quote": "Raketų paleidimo kompleksą sudarė po žeme įrengtas technologinis blokas ir aplink jį iškastos 4 požeminės raketų paleidimo šachtos."
+        },
+        {
+          "source": "S1",
+          "quote": "Bazę statė 10 000 kareivių statybininkų, kurie 27 metrų gylio raketų paleidimo šachtas kasė kaip šulinius, kastuvais."
+        },
+        {
+          "source": "S1",
+          "quote": "Po to buvo užklotas stogas, kurį užpylė skystu stiklu, kad į patalpas nepatektų vanduo. Viską paslėpė po žemių sluoksniu."
+        },
+        {
+          "source": "S1",
+          "quote": "1962 metų gruodžio 31-ą dieną statybos darbai buvo baigti. Vakare, 10 valandą, prieš pat Naujuosius metus, “raketininkai” priėmė pirmąjį karinį budėjimą."
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "title": "Taikinys: Europa",
+      "script": "Įsivaizduok: į požemines šachtas nuleidžiamos keturios R-12 termobranduolinės raketos. [S1] Amerikiečiai jas vadino SS4. [S1] Vienos raketos aukštis su galvute – 23 metrai, skersmuo – 1,65 metro. [S1] Jos galingumas siekė nuo 1 iki 2,3 megatonos. [S1] Tai buvo vidutinio nuotolio raketos, galėjusios nuskristi iki 2000 kilometrų. [S1] Iš Plokštinės buvo galima raketą nutaikyti į bet kurią Europos valstybę. [S1] Bazės veikimo metu raketos buvo nukreiptos į Norvegiją, Didžiąją Britaniją, Ispaniją, Vakarų Vokietiją ir Turkiją. [S1] Kas 3–4 metus nutaikymo kryptis buvo keičiama. [S1] O dabar – Kuba: 79-ojo raketinio pulko kariškiai dalyvavo Kubos įvykiuose. [S1] 1962 metų rugsėjį iš Šateikių buvo gabenamos raketos. [S1] Jos buvo kraunamos naktį, kareiviai dirbo apsirengę civiliais rūbais, o viskas buvo įslaptinta. [S1] Vėliau raketos išgabentos į Sevastopolį, pakrautos į prekinius laivus ir išplukdytos į Havaną. [S1] 79-ojo raketinio pulko kariškiai raketas statė centrinėje Kuboje iki 1963 metų sausio. [S1] Bet kas dar tavęs laukia pačioje šachtoje – sužinosi tik atvykus į Plokštinę?",
+      "cliffhanger": "Bet kas dar tavęs laukia pačioje šachtoje – sužinosi tik atvykus į Plokštinę?",
+      "facts_used": [
+        {
+          "source": "S1",
+          "quote": "Į šachtas buvo nuleistos 4 R-12 termobranduolinės raketos. Amerikiečiai šias raketas vadino SS4."
+        },
+        {
+          "source": "S1",
+          "quote": "Raketos charakteristikos: aukštis su galvute - 23 metrai (19 m raketa-nešėja ir 4 m raketos galvutė); skersmuo – 1,65 m. ; 1 raketos galingumas – siekė nuo 1 iki– 2,3 megatonos."
+        },
+        {
+          "source": "S1",
+          "quote": "Raketos buvo vidutinio nuotolio, jos galėjo nuskristi iki 2000 km"
+        },
+        {
+          "source": "S1",
+          "quote": "iš čia buvo galima kontroliuoti visą Europą, t.y. raketą nutaikyti į bet kurią Europos valstybę."
+        },
+        {
+          "source": "S1",
+          "quote": "Bazės veikimo periodu raketos buvo nukreiptos į šias vakarų šalis: Norvegiją, Didžiąją Britaniją, Ispaniją, Vakarų Vokietiją ir Turkiją."
+        },
+        {
+          "source": "S1",
+          "quote": "Kas 3-4 metus raketų nutaikymo kryptis buvo keičiama."
+        },
+        {
+          "source": "S1",
+          "quote": "79-to raketinio pulko kariškiai taip pat dalyvavo Kubos įvykiuose."
+        },
+        {
+          "source": "S1",
+          "quote": "Ten, 1962 m. rugsėjo mėnesį, iš Šateikių buvo gabenamos raketos. Viskas buvo įslaptinta. Raketos buvo kraunamos naktį, o kareiviai dirbo, apsivilkę civiliais rūbais."
+        },
+        {
+          "source": "S1",
+          "quote": "Vėliau raketos išgabentos į Sevastopolį, pakrautos į prekinius laivus ir išplukdytos į Havaną. 79-to raketinio pulko kariškiai raketas statė centrinės Kubos miesteliuose iki 1963 m. sausio."
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "title": "Diena, kai jie išėjo",
+      "script": "Įsivaizduok dieną, kai budėjimas po žeme baigiasi. Per visą raketinės bazės egzistavimo laikotarpį nė viena raketa nebuvo paleista. [S1] Kariškiai iš Plokštinės termobranduolinių raketų paleidimo komplekso pasitraukė 1978 metų birželio 18 dieną. [S1] Pagrindinė įranga demontuota 1981 metais. [S3] Pasitraukus sovietų kariškiams, apleista ir neprižiūrima bazė buvo labai nuniokota metalo vagių. [S3] Kareivinių pastatai Plokštinėje buvo rekonstruoti, čia kurį laiką veikė pionierių stovykla. [S3] Tačiau istorija čia nesibaigė. 1992 metais raketų bazė atiteko Žemaitijos nacionaliniam parkui. [S3] 1996 metais bazė minimaliai pritaikyta lankytojams, o Šaltojo karo muziejus oficialiai atidarytas 2012 metų pabaigoje. [S3] Tai vienintelis Europoje ir vienas iš nedaugelio pasaulyje tokio pobūdžio muziejų. [S3] Ekspozicijoje demonstruojamas ir atkurtas daugiapakopės elektroninės apsaugos sistemos fragmentas. [S3] Lankytojams pritaikyta viena šachta, o kitos trys, labai suniokotos, buvo konservuotos. [S3] Kaip šiandien atrodo vienintelė lankytojams pritaikyta šachta – pamatysi tik atvykus į Plokštinę?",
+      "cliffhanger": "Kaip šiandien atrodo vienintelė lankytojams pritaikyta šachta – pamatysi tik atvykus į Plokštinę?",
+      "facts_used": [
+        {
+          "source": "S1",
+          "quote": "Per raketinės bazės egzistavimo laikotarpį nė viena raketa nebuvo paleista."
+        },
+        {
+          "source": "S1",
+          "quote": "Kariškiai iš Plokštinės termobranduolinių raketų paleidimo komplekso pasitraukė 1978 m. birželio 18 d."
+        },
+        {
+          "source": "S3",
+          "quote": "pagrindinė įranga demontuota 1981"
+        },
+        {
+          "source": "S3",
+          "quote": "Pasitraukus sovietų kariškiams apleista ir neprižiūrima bazė buvo labai nuniokota metalo vagių."
+        },
+        {
+          "source": "S3",
+          "quote": "Kareivinių pastatai Plokštinėje buvo rekonstruoti, čia kurį laiką veikė pionierių stovykla."
+        },
+        {
+          "source": "S3",
+          "quote": "1992 raketų bazė atiteko Žemaitijos nacionaliniam parkui."
+        },
+        {
+          "source": "S3",
+          "quote": "1996 bazė minimaliai pritaikyta lankytojams"
+        },
+        {
+          "source": "S3",
+          "quote": "Šaltojo karo muziejus oficialiai atidarytas 2012 pabaigoje."
+        },
+        {
+          "source": "S3",
+          "quote": "Vienintelis Europoje ir vienas iš nedaugelio pasaulyje tokio pobūdžio muziejų."
+        },
+        {
+          "source": "S3",
+          "quote": "demonstruojamas ir atkurtas daugiapakopės elektroninės apsaugos sistemos fragmentas"
+        },
+        {
+          "source": "S3",
+          "quote": "lankytojams pritaikyta viena šachta (kitos trys, labai suniokotos, buvo konservuotos)"
+        }
+      ]
+    }
+  ],
+  "missions": [
+    {
+      "n": 1,
+      "title": "Atvykimas ir kodėl čia",
+      "story": "Įsivaizduok: tu atvyksti į Plokštinės mišką, o po tavo kojomis – buvusi sovietinė požeminė raketų bazė. [S1] Kodėl raketas slėpti būtent čia, Platelių ežero pakrantėje? [S1] Vieta buvo beveik 170 metrų virš jūros lygio. [S1] Gruntai čia buvo lengvi – smėlis. [S1] Ir svarbiausia – aplink gyveno mažai žmonių. [S1] Tai buvo pirmoji Sovietų Sąjungoje požeminė raketinė bazė, pradėta statyti 1960 m. rugsėjį. [S1] Iš čia buvo galima kontroliuoti visą Europą, raketą nutaikyti į bet kurią Europos valstybę. [S1] Pajusk kontrastą: rami gamta viršuje, o slapta istorija – giliai po žeme.",
+      "task": "Sustok ir apsidairyk. Nufotografuok Plokštinės mišką aplink tave. Tada įsivaizduok šią vietą kaip slaptos bazės statybvietę ir užsirašyk: kuri priežastis – beveik 170 m aukštis virš jūros lygio [S1], lengvi gruntai (smėlis) [S1] ar mažai gyventojų [S1] – tau atrodo svarbiausia ir kodėl?",
+      "quiz": {
+        "question": "Koks buvo Plokštinės vietos aukštis virš jūros lygio?",
+        "options": [
+          "Beveik 70 m",
+          "Beveik 170 m",
+          "Beveik 270 m"
+        ],
+        "answer": "Beveik 170 m",
+        "source": "S1",
+        "quote": "pakankamai didelis aukštis virš jūros lygio (beveik 170 m.)"
+      },
+      "xp": 100,
+      "facts_used": [
+        {
+          "source": "S1",
+          "quote": "Šaltojo karo ekspozicija įsikūrusi Plokštinės miške, buvusioje sovietinės armijos požeminėje termobranduolinių raketų paleidimo bazėje, pastatytoje 1962 m."
+        },
+        {
+          "source": "S1",
+          "quote": "Platelių ežero pakrantėje esantis Plokštinės miškas, labai tiko karinės bazės statybai: pakankamai didelis aukštis virš jūros lygio (beveik 170 m.), lengvi gruntai (smėlis), mažai gyventojų."
+        },
+        {
+          "source": "S1",
+          "quote": "Plokščių kaime 1960 m. rugsėjo mėn. pradėta statyti pirmoji Sovietų Sąjungoje požeminė raketinė bazė."
+        },
+        {
+          "source": "S1",
+          "quote": "iš čia buvo galima kontroliuoti visą Europą, t.y. raketą nutaikyti į bet kurią Europos valstybę."
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "title": "Šešios apsaugos linijos",
+      "story": "Įsivaizduok: artėji prie paslapties, bet tave stabdo ne viena kliūtis. Ir ne dvi. Šešios. [S1] Visa raketų paleidimo aikštelės teritorija buvo aptverta tvora. [S1] Ją sudarė 6 apsauginės linijos – spygliuotos vielos, signalizacijos, aukštos elektros įtampos ir kitos. [S1] Skamba kaip perteklinė apsauga? Pažvelk į mastą: visas objektas užėmė apie 12 ha žemės plotą, aptvertą net 6-mis apsauginėmis tvoromis. [S2] Šiandien muziejuje demonstruojamas ir atkurtas daugiapakopės elektroninės apsaugos sistemos fragmentas. [S3] Kiek iš tų šešių linijų atpažintum, jei stovėtum prieš jas pats?",
+      "task": "Pabandyk rasti ir nufotografuoti bent vieną buvusios apsaugos linijos pėdsaką. Jei jo nematai, nufotografuok vietą, kur aiškiausiai įsivaizduoji teritorijos ribą. Tada nueik palei ją 20 savo žingsnių ir mintyse suskaičiuok, kiek kliūčių rūšių – spygliuota viela, signalizacija, aukšta elektros įtampa – buvo paminėta. [S1]",
+      "quiz": {
+        "question": "Kiek apsauginių linijų sudarė raketų paleidimo aikštelės tvorą?",
+        "options": [
+          "3 linijas",
+          "6 linijas",
+          "10 linijų"
+        ],
+        "answer": "6 linijas",
+        "source": "S1",
+        "quote": "Ją sudarė 6 apsauginės linijos - spygliuotos vielos, signalizacijos, aukštos elektros įtampos ir kt."
+      },
+      "xp": 100,
+      "facts_used": [
+        {
+          "source": "S1",
+          "quote": "Visa raketų paleidimo aikštelės teritorija buvo aptverta tvora."
+        },
+        {
+          "source": "S1",
+          "quote": "Ją sudarė 6 apsauginės linijos - spygliuotos vielos, signalizacijos, aukštos elektros įtampos ir kt."
+        },
+        {
+          "source": "S2",
+          "quote": "Visas objektas užėmė apie 12 ha žemės plotą, aptvertą net 6-mis apsauginėmis tvoromis."
+        },
+        {
+          "source": "S3",
+          "quote": "demonstruojamas ir atkurtas daugiapakopės elektroninės apsaugos sistemos fragmentas"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "title": "Karinis miestelis",
+      "story": "Įsivaizduok: tu ne po žeme. Tu – viršuje, bet vis tiek slaptoje teritorijoje. Netoli raketų paleidimo aikštelės buvo pastatytas karinis miestelis [S1]. Jame gyveno apie 320 karininkų ir kareivių [S1]. Pagalvok – tai beveik mažas kaimas miške. Čia buvo štabas, kareivių korpusas ir karininkų viešbutis [S1]. Net valgyklos buvo dvi – atskirai karininkams ir kareiviams [S1]. Dar – medicinos punktas, maisto sandėlis ir automobilių parkas [S1]. O šalia aikštelės stovėjo valgykla ir 2 medinės kareivinės [S1]. Ar įsivaizduoji čia atsibusti kiekvieną rytą ir žinoti, kad esi slaptame objekte?",
+      "task": "Pabandyk rasti vietų, kur galėjo stovėti karinio miestelio pastatai. Suskaičiuok, kiek skirtingų pastatų ar jų pėdsakų pavyksta atpažinti. Nufotografuok vieną vietą, kuri, tavo manymu, geriausiai parodo miestelio mastą, ir trumpai užsirašyk, kodėl pasirinkai būtent ją.",
+      "quiz": {
+        "question": "Kiek karininkų ir kareivių gyveno kariniame miestelyje?",
+        "options": [
+          "Apie 120",
+          "Apie 320",
+          "Apie 3200"
+        ],
+        "answer": "Apie 320",
+        "source": "S1",
+        "quote": "Jame gyveno apie 320 karininkų ir kareivių."
+      },
+      "xp": 100,
+      "facts_used": [
+        {
+          "source": "S1",
+          "quote": "Šalia raketų paleidimo aikštelės buvo pastatytas karinis miestelis."
+        },
+        {
+          "source": "S1",
+          "quote": "Jame gyveno apie 320 karininkų ir kareivių."
+        },
+        {
+          "source": "S1",
+          "quote": "Čia buvo štabas, kareivių korpusas ir karininkų viešbutis, 2 valgyklos – atskirai karininkams ir kareiviams, medicinos punktas, maisto sandėlis, automobilių parkas."
+        },
+        {
+          "source": "S1",
+          "quote": "Šalia raketinės aikštelės buvo pastatyta valgykla, 2 medinės kareivinės."
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "title": "Šachtos gaubtas ir raketa R-12",
+      "story": "Įsivaizduok: stovi ant žemės, o 27 metrų gylyje po tavimi – raketa. [S1] Keturiose šachtose buvo nuleistos 4 R-12 termobranduolinės raketos. [S1] Amerikiečiai šias raketas vadino SS4. [S1] Viena raketa su galvute siekė 23 metrus. [S1] Jos skersmuo buvo 1,65 metro. [S1] Pagalvok, kaip tokį aukštį pajustum, jei žiūrėtum iš apačios į viršų. Jos galingumas siekė nuo 1 iki 2,3 megatonos. [S1] Skristi ji galėjo iki 2000 kilometrų. [S1] O viršuje – gaubtas, pritaikytas atlaikyti atominės bombos sprogimą. [S3] Specialiais bėgiais jį buvo galima nustumti per 30 minučių. [S3] Skamba lėtai? Tada kiekviena minutė turėjo svorį.",
+      "task": "Pabandyk rasti šachtos gaubtą ir sustok šalia jo. Tada žingsniais atmatuok 23 metrus – tokį aukštį raketa su galvute siekė šachtoje. [S1] Pradėk nuo gaubto krašto, garsiai suskaičiuok žingsnius ir nufotografuok pradinę bei galutinę vietas. Palygink nuotraukas: ar 23 metrai atrodo taip, kaip įsivaizdavai?",
+      "quiz": {
+        "question": "Per kiek laiko šachtos gaubtą specialiais bėgiais buvo galima nustumti?",
+        "options": [
+          "Per 30 minučių",
+          "Per 3 minutes",
+          "Per 3 valandas"
+        ],
+        "answer": "Per 30 minučių",
+        "source": "S3",
+        "quote": "juos specialiais bėgiais buvo galima nustumti per 30 minučių"
+      },
+      "xp": 100,
+      "facts_used": [
+        {
+          "source": "S1",
+          "quote": "27 metrų gylio raketų paleidimo šachtas"
+        },
+        {
+          "source": "S1",
+          "quote": "Į šachtas buvo nuleistos 4 R-12 termobranduolinės raketos."
+        },
+        {
+          "source": "S1",
+          "quote": "Amerikiečiai šias raketas vadino SS4."
+        },
+        {
+          "source": "S1",
+          "quote": "aukštis su galvute - 23 metrai (19 m raketa-nešėja ir 4 m raketos galvutė); skersmuo – 1,65 m."
+        },
+        {
+          "source": "S1",
+          "quote": "1 raketos galingumas – siekė nuo 1 iki– 2,3 megatonos."
+        },
+        {
+          "source": "S1",
+          "quote": "Raketos buvo vidutinio nuotolio, jos galėjo nuskristi iki 2000 km"
+        },
+        {
+          "source": "S3",
+          "quote": "gaubtai buvo pritaikyti atlaikyti atominės bombos sprogimą, juos specialiais bėgiais buvo galima nustumti per 30 minučių."
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "title": "Po žeme: valdymo blokas ir pamainos",
+      "story": "Įsivaizduok, kad tavo darbo vieta yra po žeme. Centriniame bloke buvo įrengti elektros ir radijo stotys, vadovavimo pultas, technologinis blokas ir poilsio kambarys budintiesiems. [S1] Čia pamainos keisdavosi kas 6 valandas. [S1] Bet visas budėjimas trukdavo ilgiau: savo 3 parų budėjimo pamainas 2 medinėse kareivinėse leisdavo 9 karininkai ir 22 kareiviai. [S1] Pamainos keisdavosi antradieniais ir penktadieniais. [S1] Ar ištemptum tokį ritmą – trumpas kaitas po žeme ir tris paras budėjimo? Sustok. Įsiklausyk. Kiek čia tylu dabar, o kiek įtampos turėjo būti tada?",
+      "task": "Pabandyk rasti vadovavimo pulto ar valdymo punkto vietą. Nufotografuok vieną detalę, kuri tau labiausiai primena budėjimą po žeme. Tada žingsniais išmatuok atstumą iki artimiausio koridoriaus posūkio ir įsivaizduok, kad čia teks sugrįžti po 6 valandų. [S1]",
+      "quiz": {
+        "question": "Kas kiek laiko pamainos keisdavosi po žeme?",
+        "options": [
+          "Kas 6 valandas",
+          "Kas 12 valandų",
+          "Kas parą"
+        ],
+        "answer": "Kas 6 valandas",
+        "source": "S1",
+        "quote": "Pamainos po žeme keisdavosi kas 6 valandas."
+      },
+      "xp": 100,
+      "facts_used": [
+        {
+          "source": "S1",
+          "quote": "elektros ir radijo stotys, vadovavimo pultas, technologinis blokas, poilsio kambarys budintiesiems"
+        },
+        {
+          "source": "S1",
+          "quote": "Pamainos po žeme keisdavosi kas 6 valandas."
+        },
+        {
+          "source": "S1",
+          "quote": "Šalia raketinės aikštelės buvo pastatyta valgykla, 2 medinės kareivinės."
+        },
+        {
+          "source": "S1",
+          "quote": "Jose savo 3 parų budėjimo pamainas leisdavo 9 karininkai ir 22 kareiviai."
+        },
+        {
+          "source": "S1",
+          "quote": "Pamainos keisdavosi antradieniais ir penktadieniais."
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "title": "Kuba ir Šateikiai",
+      "story": "Įsivaizduok, kad tavo misija tik prasideda čia, o dalis jos vyksta už tūkstančių kilometrų. Plokštinės požeminė ir Šateikių antžeminė raketinės bazės sudarė 79-tą raketinį pulką. [S1] Pulko štabas buvo Šateikiuose. [S1] Šateikiuose raketos buvo dislokuotos anksčiau nei Plokštinėje – 1961 m. [S1] 79-to raketinio pulko kariškiai taip pat dalyvavo Kubos įvykiuose. [S1] Ten, 1962 m. rugsėjo mėnesį, iš Šateikių buvo gabenamos raketos. [S1] Viskas buvo įslaptinta. [S1] Raketos buvo kraunamos naktį, o kareiviai dirbo, apsivilkę civiliais rūbais. [S1] Vėliau raketos išgabentos į Sevastopolį, pakrautos į prekinius laivus ir išplukdytos į Havaną. [S1]",
+      "task": "Pabandyk rasti informaciniuose stenduose ar ekspozicijoje paminėjimą apie Šateikius, 79-tą raketinį pulką arba Kubą ir tai nufotografuok. Jei tokio paminėjimo nerandi, nufotografuok stotelės aplinką ir įsivaizduok: tu krauni raketas naktį, dirbdamas apsivilkęs civiliais rūbais. [S1]",
+      "quiz": {
+        "question": "Kaip buvo kraunamos raketos, 1962 m. rugsėjo mėnesį gabenamos iš Šateikių?",
+        "options": [
+          "Dieną, kareiviams vilkint uniformas",
+          "Naktį, kareiviams dirbant apsivilkus civiliais rūbais",
+          "Tik oficialios ceremonijos metu"
+        ],
+        "answer": "Naktį, kareiviams dirbant apsivilkus civiliais rūbais",
+        "source": "S1",
+        "quote": "Raketos buvo kraunamos naktį, o kareiviai dirbo, apsivilkę civiliais rūbais."
+      },
+      "xp": 120,
+      "facts_used": [
+        {
+          "source": "S1",
+          "quote": "Plokštinės požeminė ir Šateikių antžeminė raketinės bazės sudarė 79-tą raketinį pulką."
+        },
+        {
+          "source": "S1",
+          "quote": "Pulko štabas buvo Šateikiuose."
+        },
+        {
+          "source": "S1",
+          "quote": "Šateikiuose raketos buvo dislokuotos anksčiau nei Plokštinėje - 1961 m."
+        },
+        {
+          "source": "S1",
+          "quote": "79-to raketinio pulko kariškiai taip pat dalyvavo Kubos įvykiuose."
+        },
+        {
+          "source": "S1",
+          "quote": "Ten, 1962 m. rugsėjo mėnesį, iš Šateikių buvo gabenamos raketos."
+        },
+        {
+          "source": "S1",
+          "quote": "Viskas buvo įslaptinta."
+        },
+        {
+          "source": "S1",
+          "quote": "Raketos buvo kraunamos naktį, o kareiviai dirbo, apsivilkę civiliais rūbais."
+        },
+        {
+          "source": "S1",
+          "quote": "Vėliau raketos išgabentos į Sevastopolį, pakrautos į prekinius laivus ir išplukdytos į Havaną."
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "title": "Finalas – nė viena raketa nepaleista, kas liko, Platelių ežeras",
+      "story": "Išeini iš požemio į mišką. Tyla. Ir svarbiausias faktas – paprastas. Per raketinės bazės egzistavimo laikotarpį nė viena raketa nebuvo paleista.[S1] Kariškiai iš Plokštinės termobranduolinių raketų paleidimo komplekso pasitraukė 1978 m. birželio 18 d.[S1] O netoliese – Platelių ežeras.[S1] Nuo komplekso iki jo buvo iškasta 2,5 km ilgio vandentiekio tranšėja.[S1] Prie ežero stovėjo du galingi siurbliai, kurie pumpuodavo vandenį į bazę ir į karinį miestelį.[S1] Įsivaizduok: po žeme – įtampa ir budėjimas, viršuje – vanduo ir miškas. Misija baigta. Bet vieta liko. Ir dabar klausimas tau: ką ši tyla pasakoja mums šiandien?",
+      "task": "Pabandyk rasti vietoje nuorodą į Platelių ežerą ir nufotografuok ją arba miško kelią ta kryptimi. Tada suskaičiuok 25 žingsnius, sustok ir įsivaizduok: tikrasis vandentiekio kelias nuo komplekso iki ežero buvo 2,5 km ilgio.[S1] Nufotografuok vietą, kurioje užbaigi misiją.",
+      "quiz": {
+        "question": "Kiek raketų buvo paleista iš Plokštinės bazės per jos egzistavimo laikotarpį?",
+        "options": [
+          "Nė viena",
+          "Viena",
+          "Keturios"
+        ],
+        "answer": "Nė viena",
+        "source": "S1",
+        "quote": "Per raketinės bazės egzistavimo laikotarpį nė viena raketa nebuvo paleista."
+      },
+      "xp": 100,
+      "facts_used": [
+        {
+          "source": "S1",
+          "quote": "Per raketinės bazės egzistavimo laikotarpį nė viena raketa nebuvo paleista."
+        },
+        {
+          "source": "S1",
+          "quote": "Kariškiai iš Plokštinės termobranduolinių raketų paleidimo komplekso pasitraukė 1978 m. birželio 18 d."
+        },
+        {
+          "source": "S1",
+          "quote": "Nuo komplekso buvo iškasta 2,5 km ilgio vandentiekio tranšėja iki Platelių ežero."
+        },
+        {
+          "source": "S1",
+          "quote": "Prie ežero stovėjo du galingi siurbliai, kurie pumpuodavo vandenį į bazę ir į karinį miestelį."
+        }
+      ]
+    }
+  ]
+}
