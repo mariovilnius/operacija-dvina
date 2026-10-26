@@ -55,6 +55,9 @@
   // Narration: pre-generated neural-voice MP3 when one exists for this language, else the browser's voice.
   let speaking = null;
   let player = null;
+  // Narration lives on GitHub Pages; copies of the app elsewhere (plateliai.lt/game) stream it from there.
+  const AUDIO_BASE = document.querySelector("script[src$='app.js']") && !location.hostname.endsWith("github.io") &&
+    location.hostname !== "localhost" ? "https://mariovilnius.github.io/operacija-dvina/" : "";
   const stopAll = () => {
     window.speechSynthesis?.cancel(); player?.pause();
     if (speaking?.dataset.label) speaking.textContent = speaking.dataset.label;
@@ -66,7 +69,7 @@
       if (speaking === button) { player.pause(); speaking = null; button.textContent = label; return; }
       stopAll();
       button.dataset.label = label;
-      player = new Audio(`audio/${lang()}/${clip}.mp3`);
+      player = new Audio(`${AUDIO_BASE}audio/${lang()}/${clip}.mp3`);
       player.onended = player.onerror = () => { speaking = null; button.textContent = label; };
       speaking = button;
       button.textContent = "■ " + t("stop");
