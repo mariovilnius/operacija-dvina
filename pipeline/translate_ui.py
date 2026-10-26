@@ -43,6 +43,13 @@ EN = {
     "source_note": "Every fact comes from a source. Tap a tag to see it.",
     "no_voice": "Your device has no voice for this language.",
     "xp_total": "{xp} XP",
+    "visit_title": "Plan your visit",
+    "museum_info": "Opening hours and tickets",
+    "museum_photos": "Photos of the museum",
+    "museum_page": "The museum on plateliai.lt",
+    "nearby_title": "Also around Lake Plateliai",
+    "nearby_hint": "Places to visit near Plokštinė, on plateliai.lt",
+    "more_places": "All places on plateliai.lt",
 }
 LT = {
     "tagline": "Slapta branduolinių raketų bazė po Žemaitijos mišku. Klausyk namie, įmink vietoje.",
@@ -78,6 +85,13 @@ LT = {
     "source_note": "Kiekvienas faktas turi šaltinį. Paliesk žymą ir pamatysi.",
     "no_voice": "Tavo įrenginyje nėra balso šiai kalbai.",
     "xp_total": "{xp} XP",
+    "visit_title": "Planuok apsilankymą",
+    "museum_info": "Darbo laikas ir bilietai",
+    "museum_photos": "Muziejaus nuotraukos",
+    "museum_page": "Muziejus plateliai.lt",
+    "nearby_title": "Dar aplink Platelių ežerą",
+    "nearby_hint": "Lankytinos vietos netoli Plokštinės, plateliai.lt",
+    "more_places": "Visos vietos plateliai.lt",
 }
 
 translate.LANGS = translate.ALL_LANGS

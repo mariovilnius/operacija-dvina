@@ -133,6 +133,20 @@
     }
   }
 
+  /** Museum pages and nearby plateliai.lt places: the game sends players on to the region. */
+  function visitHtml() {
+    const ext = 'target="_blank" rel="noopener"';
+    return `
+      <h3>${esc(t("visit_title"))}</h3>
+      <ul class="list">${data.links.museum.map((l) => `
+        <li><a class="card" href="${esc(l.url)}" ${ext}><div class="title">${esc(t(l.key))} ↗</div></a></li>`).join("")}
+      </ul>
+      <h3>${esc(t("nearby_title"))}</h3>
+      <p class="note">${esc(t("nearby_hint"))}</p>
+      <div class="chips">${data.links.nearby.map((l) => `<a class="chip" href="${esc(l.url)}" ${ext}>${esc(l.name)}</a>`).join("")}
+        <a class="chip more" href="${esc(data.links.more)}" ${ext}>${esc(t("more_places"))} ↗</a></div>`;
+  }
+
   // Views
   function home() {
     const missionCards = data.missions.map((m) => {
@@ -162,6 +176,7 @@
         <p class="status" id="status" aria-live="polite"></p></div>`}
       <ul class="list" style="margin-top:12px">${missionCards}</ul>
       <label class="toggle"><input type="checkbox" id="demo" ${state.demo ? "checked" : ""}> ${esc(t("demo_mode"))}</label>
+      ${visitHtml()}
       <h3>${esc(t("sources"))}</h3>
       <p class="note">${esc(t("source_note"))}</p>
       <ul class="sources">${Object.entries(data.sources).map(([id, s]) =>
@@ -205,7 +220,8 @@
         <div class="options">${text.options.map((o, i) => `<button class="option" data-i="${i}">${esc(o)}</button>`).join("")}</div>
         <div id="quiz-result"></div>
       </div>
-      ${cards.map((c) => cardHtml(c)).join("")}`;
+      ${cards.map((c) => cardHtml(c)).join("")}
+      ${n === data.missions[data.missions.length - 1].n ? visitHtml() : ""}`;
     const btn = document.getElementById("listen");
     btn.addEventListener("click", () => speak(text.story, btn, `mission-${n}`));
     view.querySelectorAll("#quiz .option").forEach((b) => b.addEventListener("click", () => {

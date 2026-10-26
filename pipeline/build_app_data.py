@@ -61,8 +61,25 @@ verdicts = {"lt": {k: k for k in VERDICTS["en"]}} | {lang: VERDICTS[lang] for la
 AUDIO = ROOT / "app" / "audio"
 audio = {d.name: sorted(f.stem for f in d.glob("*.mp3")) for d in AUDIO.glob("*") if d.is_dir()} if AUDIO.exists() else {}
 
+# Cross-links: the museum's own pages and the plateliai.lt places around it.
+PLATELIAI = "https://plateliai.lt/vietos/{slug}?utm_source=operacija-dvina&utm_medium=game"
+LINKS = {
+    "museum": [
+        {"key": "museum_info", "url": "https://zemaitijosnpd.lrv.lt/lt/informacija-atvykstantiems/ekspozicijos/saltojo-karo-ekspozicija-1/"},
+        {"key": "museum_photos", "url": "https://zemaitijosnp.lt/veikla/lankytini-objektai/saltojo-karo-ekspozicija/"},
+        {"key": "museum_page", "url": PLATELIAI.format(slug="saltojo-karo-ekspozicija")},
+    ],
+    "nearby": [{"name": name, "url": PLATELIAI.format(slug=slug)} for slug, name in [
+        ("plateliai", "Plateliai"), ("plateliu-ezeras", "Platelių ežeras"), ("plateliu-dvaro-parkas", "Platelių dvaro parkas"),
+        ("plateliu-dvaro-sodyba", "Platelių dvaro sodyba"), ("uzgaveniu-ekspozicija", "Užgavėnių ekspozicija"),
+        ("siberijos-apzvalgos-bokstas", "Siberijos apžvalgos bokštas"), ("berzoras", "Beržoras"),
+    ]],
+    "more": "https://plateliai.lt/vietos?utm_source=operacija-dvina&utm_medium=game",
+}
+
 bundle = {
     "audio": audio,
+    "links": LINKS,
     "languages": [{"code": c, "name": n, "speech": s} for c, n, s in LANGUAGES],
     "ui": ui, "verdicts": verdicts, "verdict_order": list(VERDICTS["en"]),
     "sources": sources, "episodes": episodes, "missions": missions, "cards": cards,

@@ -112,3 +112,7 @@ a.card:hover, a.card:focus-visible { border-color: var(--accent); }
   gap: 14px; padding: 16px; background: rgba(0, 0, 0, .92); text-align: center;
 }
 .scanner video { width: min(100%, 420px); aspect-ratio: 1; object-fit: cover; border-radius: var(--radius); border: 2px solid var(--accent); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.chip { padding: 8px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); text-decoration: none; font-size: 14px; }
+.chip:hover, .chip:focus-visible { border-color: var(--accent); }
+.chip.more { color: var(--accent); }
