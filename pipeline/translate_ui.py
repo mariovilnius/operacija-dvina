@@ -50,6 +50,10 @@ EN = {
     "nearby_title": "Also around Lake Plateliai",
     "nearby_hint": "Places to visit near Plokštinė, on plateliai.lt",
     "more_places": "All places on plateliai.lt",
+    "fig_range": "R-12 range from Plokštinė: the dashed circle is 2,000 km. Highlighted are the countries named as targets, in today's borders (Germany then meant West Germany). Most of Spain lies beyond the circle.",
+    "fig_plan": "Schematic plan, not to scale: the control block, 4 shafts, 6 security lines, the military town 500 m away and the 2.5 km water pipe to Lake Plateliai.",
+    "fig_section": "A shaft 27 m deep and about 5 m across, with the 23 m R-12 inside (19 m rocket + 4 m warhead) and a 1.8 m person for scale.",
+    "video": "Video",
 }
 LT = {
     "tagline": "Slapta branduolinių raketų bazė po Žemaitijos mišku. Klausyk namie, įmink vietoje.",
@@ -92,6 +96,10 @@ LT = {
     "nearby_title": "Dar aplink Platelių ežerą",
     "nearby_hint": "Lankytinos vietos netoli Plokštinės, plateliai.lt",
     "more_places": "Visos vietos plateliai.lt",
+    "fig_range": "R-12 nuotolis nuo Plokštinės: punktyrinis apskritimas – 2000 km. Paryškintos šalys, šaltiniuose įvardytos kaip taikiniai, dabartinėmis sienomis (Vokietija tada – Vakarų Vokietija). Didžioji Ispanijos dalis – už apskritimo.",
+    "fig_plan": "Schema ne pagal mastelį: valdymo blokas, 4 šachtos, 6 apsaugos linijos, karinis miestelis už 500 m ir 2,5 km vandentiekis iki Platelių ežero.",
+    "fig_section": "27 m gylio ir apie 5 m skersmens šachta su 23 m raketa R-12 (19 m raketa nešėja + 4 m galvutė) ir 1,8 m žmogus mastelio palyginimui.",
+    "video": "Vaizdo įrašas",
 }
 
 translate.LANGS = translate.ALL_LANGS

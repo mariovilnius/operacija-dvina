@@ -133,6 +133,17 @@
     }
   }
 
+  /** Figures (maps, plans) attached to an episode or a mission, with a translated caption and source tags. */
+  function figuresHtml(kind, n) {
+    return Object.entries(data.figures)
+      .filter(([, f]) => f[kind].includes(n))
+      .map(([name, f]) => `
+        <figure class="fig">
+          <img src="img/${name}.svg" alt="${esc(t(f.caption))}" loading="lazy">
+          <figcaption>${esc(t(f.caption))} ${withTags(f.sources.map((s) => `[${s}]`).join(""))}</figcaption>
+        </figure>`).join("");
+  }
+
   /** Museum pages and nearby plateliai.lt places: the game sends players on to the region. */
   function visitHtml() {
     const ext = 'target="_blank" rel="noopener"';
@@ -180,7 +191,8 @@
       <h3>${esc(t("sources"))}</h3>
       <p class="note">${esc(t("source_note"))}</p>
       <ul class="sources">${Object.entries(data.sources).map(([id, s]) =>
-        `<li><a class="tag ${id[0] === "T" ? "t" : ""}" href="${esc(s.url)}" target="_blank" rel="noopener">${id}</a> ${esc(s.title)}${s.narrator ? ` · ${esc(s.narrator)}` : ""}</li>`).join("")}</ul>`;
+        `<li><a class="tag ${id[0] === "T" ? "t" : ""}" href="${esc(s.url)}" target="_blank" rel="noopener">${id}</a> ${esc(s.title)}${s.narrator ? ` · ${esc(s.narrator)}` : ""}${s.video ? `
+          <a class="chip video" href="${esc(s.video.url)}" target="_blank" rel="noopener">▶ ${esc(t("video"))}: ${esc(s.video.title)} · ${esc(s.video.channel)}</a>` : ""}</li>`).join("")}</ul>`;
     document.getElementById("scan")?.addEventListener("click", () => scan(document.getElementById("status")));
     document.getElementById("demo").addEventListener("change", (e) => { state.demo = e.target.checked; save(); render(); });
   }
@@ -194,7 +206,8 @@
       <div class="kicker" style="font:600 11px var(--mono);letter-spacing:.14em;color:var(--accent)">${esc(t("episode_label", { n }))}</div>
       <h2>${esc(title)}</h2>
       <div class="row"><button class="btn" id="listen">▶ ${esc(t("listen"))}</button></div>
-      <div class="prose panel"><p>${withTags(script)}</p></div>`;
+      <div class="prose panel"><p>${withTags(script)}</p></div>
+      ${figuresHtml("episodes", n)}`;
     const btn = document.getElementById("listen");
     btn.addEventListener("click", () => speak(script, btn, `episode-${n}`));
   }
@@ -212,6 +225,7 @@
       <h3>${esc(t("story"))}</h3>
       <div class="row"><button class="btn" id="listen">▶ ${esc(t("listen"))}</button></div>
       <div class="prose panel"><p>${withTags(text.story)}</p></div>
+      ${figuresHtml("missions", n)}
       <h3>${esc(t("task"))}</h3>
       <div class="panel"><p style="margin:0">${withTags(text.task)}</p></div>
       <h3>${esc(t("quiz"))}</h3>

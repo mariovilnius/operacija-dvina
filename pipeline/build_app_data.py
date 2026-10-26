@@ -77,7 +77,17 @@ LINKS = {
     "more": "https://plateliai.lt/vietos?utm_source=operacija-dvina&utm_medium=game",
 }
 
+# Figures drawn by tools/graphics/make_graphics.py; captions come from the UI strings.
+FIGURES = {
+    "range-map": {"caption": "fig_range", "sources": ["S1"], "episodes": [2], "missions": []},
+    "base-plan": {"caption": "fig_plan", "sources": ["S1", "S2"], "episodes": [], "missions": [2]},
+    "shaft-section": {"caption": "fig_section", "sources": ["S1", "S3"], "episodes": [], "missions": [4]},
+}
+# Extra media next to a source in the source list
+sources["S1"]["video"] = {"url": "https://youtu.be/D84_CdQ6KpI", "title": "PLOKŠTINĖS RAKETŲ BAZĖ", "channel": "LT Life"}
+
 bundle = {
+    "figures": FIGURES,
     "audio": audio,
     "links": LINKS,
     "languages": [{"code": c, "name": n, "speech": s} for c, n, s in LANGUAGES],

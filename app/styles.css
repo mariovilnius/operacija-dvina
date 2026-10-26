@@ -116,3 +116,7 @@ a.card:hover, a.card:focus-visible { border-color: var(--accent); }
 .chip { padding: 8px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); text-decoration: none; font-size: 14px; }
 .chip:hover, .chip:focus-visible { border-color: var(--accent); }
 .chip.more { color: var(--accent); }
+.fig { margin: 14px 0 0; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.fig img { display: block; width: 100%; height: auto; background: #0e1411; }
+.fig figcaption { padding: 10px 14px 12px; font-size: 14px; color: var(--muted); }
+.chip.video { display: inline-block; margin: 6px 0 0 0; color: var(--text); font-size: 13px; }

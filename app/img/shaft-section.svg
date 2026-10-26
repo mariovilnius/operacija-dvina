@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1100" role="img" aria-label="Cross-section of a missile shaft">
+<rect width="1000" height="1100" fill="#0e1411"/>
+<rect x="0" y="120" width="1000" height="980" fill="#16201b"/>
+<line x1="0" y1="120" x2="1000" y2="120" stroke="#9aa69f" stroke-width="3"/>
+<rect x="407.0" y="120" width="186" height="828" fill="#2a332e"/>
+<rect x="425.0" y="120" width="150" height="810" fill="#0b1310"/>
+<path d="M385.0 120 Q500 50 615.0 120Z" fill="#3a4a42" stroke="#9aa69f" stroke-width="3"/>
+<line x1="355.0" y1="120" x2="375.0" y2="120" stroke="#9aa69f" stroke-width="2"/><text x="345.0" y="127" fill="#9aa69f" font-size="20" font-family="IBM Plex Mono, ui-monospace, monospace" text-anchor="end">0 m</text><line x1="355.0" y1="270" x2="375.0" y2="270" stroke="#9aa69f" stroke-width="2"/><text x="345.0" y="277" fill="#9aa69f" font-size="20" font-family="IBM Plex Mono, ui-monospace, monospace" text-anchor="end">5 m</text><line x1="355.0" y1="420" x2="375.0" y2="420" stroke="#9aa69f" stroke-width="2"/><text x="345.0" y="427" fill="#9aa69f" font-size="20" font-family="IBM Plex Mono, ui-monospace, monospace" text-anchor="end">10 m</text><line x1="355.0" y1="570" x2="375.0" y2="570" stroke="#9aa69f" stroke-width="2"/><text x="345.0" y="577" fill="#9aa69f" font-size="20" font-family="IBM Plex Mono, ui-monospace, monospace" text-anchor="end">15 m</text><line x1="355.0" y1="720" x2="375.0" y2="720" stroke="#9aa69f" stroke-width="2"/><text x="345.0" y="727" fill="#9aa69f" font-size="20" font-family="IBM Plex Mono, ui-monospace, monospace" text-anchor="end">20 m</text><line x1="355.0" y1="870" x2="375.0" y2="870" stroke="#9aa69f" stroke-width="2"/><text x="345.0" y="877" fill="#9aa69f" font-size="20" font-family="IBM Plex Mono, ui-monospace, monospace" text-anchor="end">25 m</text>
+<path d="M475.1 930 L475.1 360 L500 240 L524.9 360 L524.9 930Z" fill="#c9cfc9"/>
+<path d="M475.1 360 L500 240 L524.9 360Z" fill="#ef7d6b"/>
+<line x1="615.0" y1="240" x2="615.0" y2="930" stroke="#d6b25e" stroke-width="3"/>
+<text x="631.0" y="585.0" fill="#d6b25e" font-size="32" font-family="IBM Plex Mono, ui-monospace, monospace" font-weight="600">23 m</text>
+<text x="631.0" y="308.0" fill="#ef7d6b" font-size="22" font-family="IBM Plex Mono, ui-monospace, monospace">4 m</text>
+<text x="631.0" y="625.0" fill="#9aa69f" font-size="22" font-family="IBM Plex Mono, ui-monospace, monospace">19 m + 4 m</text>
+<line x1="425.0" y1="980" x2="575.0" y2="980" stroke="#9aa69f" stroke-width="2"/>
+<text x="500" y="1014" fill="#9aa69f" font-size="22" font-family="IBM Plex Mono, ui-monospace, monospace" text-anchor="middle">≈ 5 m</text>
+<text x="345.0" y="937" fill="#e9ece6" font-size="26" font-family="IBM Plex Mono, ui-monospace, monospace" font-weight="600" text-anchor="end">27 m</text>
+<g transform="translate(760 120)" stroke="#e9ece6" stroke-width="5" stroke-linecap="round" fill="none"><circle cx="0" cy="-46.0" r="8" fill="#e9ece6"/><line x1="0" y1="-38.0" x2="0" y2="-25.5"/><line x1="0" y1="-25.5" x2="-10" y2="0"/><line x1="0" y1="-25.5" x2="10" y2="0"/><line x1="-14" y1="-40.5" x2="14" y2="-40.5"/></g>
+<text x="760" y="52.0" fill="#9aa69f" font-size="20" font-family="IBM Plex Mono, ui-monospace, monospace" text-anchor="middle">1,8 m</text>
+</svg>
