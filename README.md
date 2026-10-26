@@ -33,7 +33,7 @@ Run it locally:
 python -m http.server 8765 --directory app
 ```
 
-Printable A4 posters with one QR code per station are in [docs/qr/posters.html](docs/qr/posters.html), made by `pipeline/make_qr.py`. Narration plays pre-generated neural-voice MP3s from `app/audio/<lang>/` (made by `pipeline/make_audio.py` with Azure AI Speech) and falls back to the browser's own voice where a clip is missing.
+Printable A4 posters with one QR code per station are in [docs/qr/posters.html](docs/qr/posters.html), made by `pipeline/make_qr.py`. Narration plays pre-generated neural-voice MP3s from `app/audio/<lang>/` (made by `pipeline/make_audio.py` with Microsoft neural voices: Azure AI Speech when a key is set, otherwise edge-tts for the demo) and falls back to the browser's own voice where a clip is missing.
 
 ## How Meta's models are used
 
@@ -83,7 +83,7 @@ python translate.py en de es pt pl lv ru uk zh ja
 python translate_ui.py              # app interface strings
 python verify.py                    # must print OK
 python build_doc.py && python build_lang_doc.py
-python make_audio.py lt lv          # narration MP3s; needs AZURE_SPEECH_KEY and AZURE_SPEECH_REGION
+python make_audio.py lt en          # narration MP3s (Azure key optional, see the script)
 python build_app_data.py            # app/data/quest.json
 ```
 
@@ -91,7 +91,7 @@ Each step calls the API, and Muse models reason at length. Translating one langu
 
 ## Next
 
-- Voice: generated audio for all 11 languages instead of browser voices.
+- Voice: narration for the remaining 9 languages, and a licensed or human voice for production.
 - Hang the QR posters at the museum stations.
 - Illustrations with Muse Image, clearly labelled as illustrations.
 

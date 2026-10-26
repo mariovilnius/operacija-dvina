@@ -12,7 +12,7 @@ ALL_LANGS = {
     "lv": ("Latvian", "tu"), "ru": ("Russian", "ты"), "uk": ("Ukrainian", "ти"),
     "zh": ("Simplified Chinese (zh-CN)", "你"), "ja": ("Japanese (friendly casual style for young people)", "plain form, no keigo"),
 }
-LANGS = {k: ALL_LANGS[k] for k in (sys.argv[1:] or ["en", "de"])}
+LANGS = dict(ALL_LANGS)  # narrowed to the command-line languages in main()
 VERDICTS = {
     "en": {"FAKTAS": "FACT", "LEGENDA": "LEGEND", "LIUDIJIMAS": "TESTIMONY", "ŠALTINIAI NESUTARIA": "SOURCES DISAGREE",
            "IŠ DALIES": "PARTLY TRUE", "NEĮRODYTA": "UNPROVEN"},
@@ -74,6 +74,8 @@ def call(lang, payload):
 
 
 def main():
+    global LANGS
+    LANGS = {k: ALL_LANGS[k] for k in (sys.argv[1:] or ["en", "de"])}
     jobs = []
     for lang in LANGS:
         for e in Q["episodes"]:
