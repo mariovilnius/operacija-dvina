@@ -10,12 +10,14 @@ import html
 import json
 import pathlib
 import subprocess
+import sys
 
 import edge_tts
 import imageio_ffmpeg
 from playwright.sync_api import sync_playwright
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "pipeline"))
 OUT = ROOT / "build" / "clips"
 VIDEO = ROOT / "build" / "video"
 IMG = ROOT / "app" / "img"
@@ -170,19 +172,47 @@ def compose(name: str, clip: dict, length: float) -> pathlib.Path:
     return out
 
 
+def localized(lang: str) -> dict:
+    """Clip texts in another language, translated once with Muse Spark and cached in content/clips.json."""
+    if lang == "en":
+        return CLIPS
+    cache_path = ROOT / "content" / "clips.json"
+    cache = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {}
+    if lang not in cache:
+        sys.path.insert(0, str(ROOT / "pipeline"))
+        import translate
+        payload = {n: {"kicker": c["title"][0], "title": c["title"][1], "text": c["text"]} for n, c in CLIPS.items()}
+        out, _ = translate.call(lang, payload)
+        if not out:
+            raise SystemExit(f"translation failed for {lang}")
+        cache[lang] = out
+        cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + "
+", encoding="utf-8")
+    return {n: {**c, "title": (cache[lang][n]["kicker"], cache[lang][n]["title"]), "text": cache[lang][n]["text"]}
+            for n, c in CLIPS.items()}
+
+
 def main() -> None:
+    global VOICE, CLIPS
+    lang = sys.argv[1] if len(sys.argv) > 1 else "en"
+    from make_audio import VOICES  # same voices as the app narration
+    VOICE = VOICES[lang][1]
+    CLIPS = {f"{n}-{lang}" if lang != "en" else n: c for n, c in localized(lang).items()}
     OUT.mkdir(parents=True, exist_ok=True)
     timings = {}
     for name, clip in CLIPS.items():
         words = with_punctuation(asyncio.run(narrate(name, clip["text"])), clip["text"])
         subtitles(words, OUT / f"{name}.ass")
+        font = {"zh": "Microsoft YaHei", "ja": "Yu Gothic"}.get(lang)
+        if font:
+            ass = OUT / f"{name}.ass"
+            ass.write_text(ass.read_text(encoding="utf-8").replace("Style: Cap,Arial,", f"Style: Cap,{font},"), encoding="utf-8")
         timings[name] = words[-1][1] + 1.0
     with sync_playwright() as pw:
         stills(pw)
     for name, clip in CLIPS.items():
         out = compose(name, clip, timings[name])
         print(f"{out.name}: {timings[name]:.1f}s, {out.stat().st_size // 1024} KB")
-    (OUT / "posts.json").write_text(json.dumps({n: c["text"] for n, c in CLIPS.items()}, indent=2), encoding="utf-8")
 
 
 if __name__ == "__main__":
