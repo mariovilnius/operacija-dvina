@@ -53,6 +53,9 @@ if (RAW / "sources.json").exists() and (RAW / "testimonies.json").exists():
         check(f"card {i}", card["claim"] + " " + card["reveal"], card["evidence"])
     for s in stops:
         check(f"stop {s['stop']}", s["script"], s.get("facts_used", []))
+    if (CONTENT / "stories.lt.json").exists():
+        story = json.loads((CONTENT / "stories.lt.json").read_text(encoding="utf-8"))
+        check("stories", story["script"], story["facts_used"])
     print("Lithuanian content checked against", len(texts), "sources")
 else:
     print("data/raw missing: run fetch_sources.py and write_script.py / write_legends.py to rebuild source texts; skipping LT check")
@@ -62,6 +65,9 @@ original = {("episodes", str(e["n"])): e["title"] + " " + e["script"] for e in q
 original |= {("missions", str(m["n"])): " ".join([m["title"], m["story"], m["task"], m["quiz"]["question"], *m["quiz"]["options"]])
              for m in quest["missions"]}
 original |= {("legends", str(i)): c["claim"] + " " + c["reveal"] for i, c in enumerate(legends)}
+if (CONTENT / "stories.lt.json").exists():
+    story = json.loads((CONTENT / "stories.lt.json").read_text(encoding="utf-8"))
+    original[("stories", "1")] = story["title"] + " " + story["script"]
 for lang, groups in translations.items():
     for kind, items in groups.items():
         for key, item in items.items():

@@ -176,7 +176,7 @@
       <h3>${esc(t("episodes"))} · ${esc(t("episodes_hint"))}</h3>
       <ul class="list">${data.episodes.map((e) => `
         <li><a class="card" href="#/episode/${e.n}">
-          <div class="kicker">${esc(t("episode_label", { n: e.n }))}</div>
+          <div class="kicker">${e.bonus ? "🕯 Bonus" : esc(t("episode_label", { n: e.n }))}</div>
           <div class="title">${esc(tx(e).title)}</div></a></li>`).join("")}
       </ul>
       <h3>${esc(t("missions"))} · ${esc(t("missions_hint"))}</h3>

@@ -1,0 +1,38 @@
+{
+  "title": "Šiurpios istorijos iš už spygliuotos vielos",
+  "script": "Tu stovi Plokštinės miške, prie buvusios požeminės termobranduolinių raketų paleidimo bazės, kurios teritoriją juosė šešios apsauginės linijos. [S1] Tarp jų buvo spygliuota viela, signalizacija ir aukšta elektros įtampa. [S1]\n\nPirmąją istoriją pasakoja Judita Šatkauskienė, gidė, užaugusi Beržore. [T5] Ji prisimena apsilankymą pas tėvelio seserį, gyvenusią prie kelio, kuriuo naktimis veždavo įrangą. [T5] Žmonėms buvo įsakyta nevaikščioti lauke, nestovėti prie langų, užgesinti šviesas ir užtraukti užuolaidas. [T5] Judita su pussesere vis tiek stovėjo prie langų: vienai buvo dešimt, kitai apie penkiolika metų. [T5] Staiga namą apsupo kareiviai, pasipylė smūgiai į langus, o mergaitės sukrito ant žemės. [T5] Kajetonas Meškauskas, statybos dalinio gydytojas, aiškina, kad naktimis veždavo raketinį kurą. [T3] Dėl cisternose padidėjusio slėgio nuodingi garai verždavosi per apsauginius vožtuvus, todėl kareiviai vaikydavo žmones nuo kelio ir liepdavo užsidarinėti langus. [T3]\n\nAntrąją istoriją taip pat prisimena Judita Šatkauskienė, gidė, užaugusi Beržore. [T5] Ji pasakoja apie muziejaus lankytoją, studentą, Plateliuose tėvų dovanotu žiūronu stebėjusį miško paukščius. [T5] Už nugaros pasigirdo šnabždesys, ir jį užklupo kariškiai. [T5] Kariškiai tardė studentą tris paras, kol įsitikino, kad jis stebėjo tik paukščius. [T5] Tačiau žiūrono jam taip ir neatidavė. [T5]\n\nTrečiąją istoriją pasakoja Stanislovas Mikašauskas, buvęs veterinarijos gydytojas. [T2] Bazės vadai jį samdė kaip veterinarijos gydytoją, o pirmą kartą atvažiavęs majoras pasakė, kad gydytojo reikia tuoj pat. [T2] Mikašauską sunkvežimyje apkrovė malkomis, įvežė į teritoriją ir nuvežė prie pastato, kur buvo kiaulės. [T2] Po darbo jį išvedė pro tvorą miške. [T2] Nors jis pasirašydavo dokumentus, į bazę patekdavo nelegaliai. [T2] Kariškiai įspėjo, kad tikrintojams pakliuvęs jis praleistų dvi paras, kol išsiaiškintų, kas jis. [T2] Vėliau jis su karininkais medžiodavo antis, bet apie bazę jie nekalbėdavo, o bandant teirautis nutylėdavo. [T2]\n\nKetvirtąją istoriją pasakoja Stanislovas Puidokas, vietinis gyventojas. [T1] Jis kalba apie ypač slaptą angarą, apie kurį vietiniai žinojo labai mažai. [T1] Angaro paskirtį supo gandai apie branduolinių raketų galvučių saugojimą, bet kas buvo viduje, vietiniai nežinojo. [T1] Žvyrą vežęs vietinis galėdavo važiuoti tik iki techninės zonos, buvusios už dviejų kilometrų nuo angaro. [T1] Toliau mašiną perimdavo karininkai, važiuodavo patys ir grąžindavo ją jau tuščią. [T1] Angarą apipylė žvyru, o ant jo supylė žemės sluoksnį. [T1]\n\nPenktąją istoriją pasakoja Eugenijus Bunka, kraštotyrininkas. [T5] Netoli Plokštinės bazės buvo šunkelis, kuriame vaikas, eidamas į mokyklą, pamatė ant kelmelio sėdintį kareivį. [T5] Grįžęs iš mokyklos, vaikas jį dar matė toje pačioje vietoje ir apie tai papasakojo mamai. [T5] Mama nuėjo pažiūrėti, rado kareivį mirusį ir pranešė daliniui. [T5] Pasak Bunkos, kareivis buvo išėjęs be leidimo, grįždamas atsisėdo ant kelmelio, užmigo ir sušalo. [T5]\n\nŠeštąją istoriją taip pat pasakoja Eugenijus Bunka, kraštotyrininkas. [T5] Jis buvo vienas iš pirmųjų žmonių, įžengusių į apleistą raketų bazę. [T5] Keli plateliškiai išpjovė kariškių prieš išvykstant užvirintas duris, ir vyrai įėjo į tamsos apgaubtą bunkerį. [T5] Visa įranga stovėjo savo vietose, elektros nebuvo, o jie ėjo pasišviesdami žibintu ir žvakėmis. [T5] Koridoriuje, vedančiame į šachtą, metalinės grindys judėjo ir klibėjo, o po grindimis ir ant sienų buvo kabeliai. [T5] Šviesos buvo tik tiek, kiek pavyko pasišviesti, ir jam atrodė, kad čia būtų galima filmuoti „Stalkerį“. [T5]\n\nŠiandien buvusioje bazėje Plokštinės miške įsikūrusi Šaltojo karo ekspozicija. [S1] Atvyk į Šaltojo karo muziejų Plokštinėje, pažvelk į šachtas ir išgirsk šias istorijas vietoje. [S1]",
+  "facts_used": [
+    {
+      "source": "S1",
+      "quote": "Ją sudarė 6 apsauginės linijos"
+    },
+    {
+      "source": "T5",
+      "quote": "viduje turėjo būti užgesintos šviesos ir užtrauktos užuolaidos"
+    },
+    {
+      "source": "T3",
+      "quote": "naktimis veždavo raketinį kurą"
+    },
+    {
+      "source": "T5",
+      "quote": "žiūrėjo tik į paukščius"
+    },
+    {
+      "source": "T2",
+      "quote": "Jie mane sunkvežimyje apkrovė malkomis"
+    },
+    {
+      "source": "T1",
+      "quote": "Kas buvo viduje – mes nežinome"
+    },
+    {
+      "source": "T5",
+      "quote": "ant kelmelio sėdintį kareivuką"
+    },
+    {
+      "source": "T5",
+      "quote": "ėjome tik su žibintu, su žvakėm pasišviesdami"
+    }
+  ]
+}

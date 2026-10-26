@@ -38,6 +38,12 @@ for e in quest["episodes"]:
     text |= {lang: tr["episodes"][str(e["n"])] for lang, tr in translations.items()}
     episodes.append({"n": e["n"], "text": text})
 
+# Bonus episode: witnesses' stories (pipeline/write_stories.py)
+story = json.loads((CONTENT / "stories.lt.json").read_text(encoding="utf-8"))
+episodes.append({"n": len(episodes) + 1, "bonus": True,
+                 "text": {"lt": {"title": story["title"], "script": story["script"]}}
+                 | {lang: tr["stories"]["1"] for lang, tr in translations.items() if "stories" in tr}})
+
 missions = []
 for m in quest["missions"]:
     q = m["quiz"]
