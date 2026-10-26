@@ -29,6 +29,18 @@ VOICES = {
     "zh": ("zh-CN", "zh-CN-YunxiNeural"), "ja": ("ja-JP", "ja-JP-KeitaNeural"),
 }
 AUDIO = ROOT / "app" / "audio"
+CONTENT = ROOT / "content"
+
+
+def spoken_form(lang: str, text: str) -> str:
+    """Drops source tags and applies the language's pronunciation rules (content/speech.<lang>.json)."""
+    text = re.sub(r"\s*\[[ST]\d\]", "", text)
+    rules = CONTENT / f"speech.{lang}.json"
+    if rules.exists():
+        import json
+        for pattern, repl in json.loads(rules.read_text(encoding="utf-8"))["rules"]:
+            text = re.sub(pattern, repl, text)
+    return text
 AZURE_KEY, AZURE_REGION = os.environ.get("AZURE_SPEECH_KEY"), os.environ.get("AZURE_SPEECH_REGION")
 
 
@@ -83,7 +95,7 @@ async def main(langs: list[str]) -> None:
         out = AUDIO / lang / f"{name}.mp3"
         if out.exists():
             return
-        spoken = re.sub(r"\s*\[[ST]\d\]", "", text)
+        spoken = spoken_form(lang, text)
         async with gate:
             for attempt in range(3):
                 try:
