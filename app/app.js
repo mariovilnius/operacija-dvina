@@ -10,7 +10,7 @@
   // Per-device progress. Storage can be unavailable (private mode), so every access is guarded.
   const STORE_KEY = "operacija-dvina";
   const state = Object.assign(
-    { lang: null, quizzes: {}, cards: {}, unlocked: false, demo: false },
+    { lang: null, quizzes: {}, cards: {}, opened: {}, demo: false },
     (() => { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch { return {}; } })()
   );
   const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch { /* not persisted */ } };
@@ -19,7 +19,8 @@
   const lang = () => state.lang || "en";
   const t = (key, vars = {}) => (data.ui[lang()][key] ?? data.ui.en[key]).replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? "");
   const tx = (item) => item.text[lang()] || item.text.en;
-  const isOpen = () => state.unlocked || state.demo;
+  // A mission opens when its station's QR code is scanned (or in demo mode).
+  const isOpen = (n) => state.demo || !!state.opened[n];
   const QUOTES = { lt: ["„", "“"], de: ["„", "“"], pl: ["„", "”"], lv: ["“", "”"], ru: ["«", "»"], uk: ["«", "»"],
     es: ["«", "»"], pt: ["«", "»"], zh: ["“", "”"], ja: ["「", "」"] };
   const quoted = (s) => { const [a, b] = QUOTES[lang()] || ["“", "”"]; return a + esc(s) + b; };
@@ -71,35 +72,57 @@
     synth.speak(utter);
   }
 
-  function distanceKm(a, b) {
-    const rad = (d) => (d * Math.PI) / 180;
-    const h = Math.sin(rad(b.lat - a.lat) / 2) ** 2 +
-      Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(rad(b.lng - a.lng) / 2) ** 2;
-    return 6371 * 2 * Math.asin(Math.sqrt(h));
+  /** Opens the mission whose station code is in a scanned QR link (…#/unlock/CODE) or typed code. */
+  function unlock(code) {
+    const m = data.missions.find((x) => x.code === String(code).trim().toLowerCase());
+    if (!m) return false;
+    state.opened[m.n] = true; save();
+    location.hash = `#/mission/${m.n}`;
+    return true;
   }
 
-  function checkLocation(statusEl) {
-    if (!navigator.geolocation) { statusEl.textContent = t("location_off"); return; }
-    statusEl.textContent = t("locating");
-    navigator.geolocation.getCurrentPosition((pos) => {
-      const here = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-      const target = data.missions[0].location;
-      const km = distanceKm(here, target);
-      if (km * 1000 <= target.radius_m) {
-        state.unlocked = true; save(); render();
-      } else {
-        statusEl.textContent = t("too_far", { km: km < 10 ? km.toFixed(1) : Math.round(km) });
+  // In-app scanner where the browser supports BarcodeDetector (Chrome on Android);
+  // elsewhere the phone's own camera app opens the QR link directly.
+  async function scan(statusEl) {
+    if (!("BarcodeDetector" in window) || !navigator.mediaDevices?.getUserMedia) {
+      statusEl.textContent = t("scan_unsupported"); return;
+    }
+    let stream;
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } });
+    } catch { statusEl.textContent = t("scan_unsupported"); return; }
+    const overlay = document.createElement("div");
+    overlay.className = "scanner";
+    overlay.innerHTML = `<video playsinline muted></video><p>${esc(t("scan_camera_hint"))}</p>
+      <button class="btn ghost">${esc(t("close"))}</button>`;
+    document.body.append(overlay);
+    const video = overlay.querySelector("video");
+    video.srcObject = stream; await video.play();
+    const detector = new BarcodeDetector({ formats: ["qr_code"] });
+    let running = true;
+    const stop = () => { running = false; stream.getTracks().forEach((tr) => tr.stop()); overlay.remove(); };
+    overlay.querySelector("button").onclick = stop;
+    while (running) {
+      const codes = await detector.detect(video).catch(() => []);
+      const value = codes[0]?.rawValue;
+      if (value) {
+        stop();
+        const code = (value.match(/unlock\/([a-z0-9]+)/i) || [])[1];
+        if (!code || !unlock(code)) statusEl.textContent = t("bad_code");
+        return;
       }
-    }, () => { statusEl.textContent = t("location_off"); }, { enableHighAccuracy: true, timeout: 15000 });
+      await new Promise((r) => setTimeout(r, 250));
+    }
   }
 
   // Views
   function home() {
     const missionCards = data.missions.map((m) => {
       const done = state.quizzes[m.n] !== undefined;
-      const cls = `card ${isOpen() ? "" : "locked"} ${done ? "done" : ""}`;
-      const inner = `<div class="kicker">${esc(t("mission_label", { n: m.n }))} · +${m.xp} XP</div><div class="title">${esc(tx(m).title)}</div>`;
-      return `<li>${isOpen() ? `<a class="${cls}" href="#/mission/${m.n}">${inner}</a>` : `<div class="${cls}">${inner}</div>`}</li>`;
+      const open = isOpen(m.n);
+      const cls = `card ${open ? "" : "locked"} ${done ? "done" : ""}`;
+      const inner = `<div class="kicker">${open ? "" : "🔒 "}${esc(t("mission_label", { n: m.n }))} · +${m.xp} XP</div><div class="title">${esc(tx(m).title)}</div>`;
+      return `<li>${open ? `<a class="${cls}" href="#/mission/${m.n}">${inner}</a>` : `<div class="${cls}">${inner}</div>`}</li>`;
     }).join("");
     view.innerHTML = `
       <section class="hero">
@@ -114,8 +137,10 @@
           <div class="title">${esc(tx(e).title)}</div></a></li>`).join("")}
       </ul>
       <h3>${esc(t("missions"))} · ${esc(t("missions_hint"))}</h3>
-      ${isOpen() ? "" : `<div class="panel"><p class="note">${esc(t("locked"))}</p>
-        <div class="row"><button class="btn" id="locate">${esc(t("check_location"))}</button></div>
+      ${data.missions.every((m) => isOpen(m.n)) ? "" : `<div class="panel">
+        <p style="margin:0;font-weight:600">${esc(t("scan_title"))}</p>
+        <p class="note">${esc(t("scan_hint"))}</p>
+        <div class="row"><button class="btn" id="scan">${esc(t("scan_button"))}</button></div>
         <p class="status" id="status" aria-live="polite"></p></div>`}
       <ul class="list" style="margin-top:12px">${missionCards}</ul>
       <label class="toggle"><input type="checkbox" id="demo" ${state.demo ? "checked" : ""}> ${esc(t("demo_mode"))}</label>
@@ -123,7 +148,7 @@
       <p class="note">${esc(t("source_note"))}</p>
       <ul class="sources">${Object.entries(data.sources).map(([id, s]) =>
         `<li><a class="tag ${id[0] === "T" ? "t" : ""}" href="${esc(s.url)}" target="_blank" rel="noopener">${id}</a> ${esc(s.title)}${s.narrator ? ` · ${esc(s.narrator)}` : ""}</li>`).join("")}</ul>`;
-    document.getElementById("locate")?.addEventListener("click", () => checkLocation(document.getElementById("status")));
+    document.getElementById("scan")?.addEventListener("click", () => scan(document.getElementById("status")));
     document.getElementById("demo").addEventListener("change", (e) => { state.demo = e.target.checked; save(); render(); });
   }
 
@@ -143,7 +168,7 @@
 
   function mission(n) {
     const m = data.missions.find((x) => x.n === n);
-    if (!m || !isOpen()) return home();
+    if (!m || !isOpen(n)) return home();
     const text = tx(m);
     const answered = state.quizzes[n];
     const cards = data.cards.filter((c) => c.mission === n);
@@ -235,6 +260,13 @@
   function render() {
     window.speechSynthesis?.cancel();
     const route = location.hash.replace(/^#\/?/, "").split("/");
+    if (route[0] === "unlock") {
+      // A first-time visitor arriving from a wall QR picks a language first; the code waits.
+      if (!state.lang) { state.pending = route[1]; save(); languages(); }
+      else if (!unlock(route[1])) { location.hash = "#/"; }
+      return;
+    }
+    if (state.lang && state.pending) { const code = state.pending; delete state.pending; save(); if (unlock(code)) return; }
     if (!state.lang || route[0] === "lang") languages();
     else if (route[0] === "episode") episode(+route[1]);
     else if (route[0] === "mission") mission(+route[1]);

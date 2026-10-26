@@ -16,9 +16,8 @@ LANGUAGES = [
     ("zh", "中文", "zh-CN"), ("ja", "日本語", "ja-JP"),
 ]
 
-# Šaltojo karo ekspozicija, Šilinės g. 4, Plokščiai (OSM node 410889888).
-# Missions unlock anywhere within the museum area until per-mission points are surveyed on site.
-MUSEUM = {"lat": 56.032266, "lng": 21.906289, "radius_m": 600, "surveyed": False}
+# Each mission is unlocked by the QR code on the wall at its station: …#/unlock/<code>.
+QR_CODES = json.loads((CONTENT / "qr_codes.json").read_text(encoding="utf-8"))
 
 quest = json.loads((CONTENT / "quest.lt.json").read_text(encoding="utf-8"))
 legends = json.loads((CONTENT / "legends.lt.json").read_text(encoding="utf-8"))
@@ -45,7 +44,7 @@ for m in quest["missions"]:
     text = {"lt": {"title": m["title"], "story": m["story"], "task": m["task"],
                    "question": q["question"], "options": q["options"], "answer": q["answer"]}}
     text |= {lang: tr["missions"][str(m["n"])] for lang, tr in translations.items()}
-    missions.append({"n": m["n"], "xp": m["xp"], "location": MUSEUM,
+    missions.append({"n": m["n"], "xp": m["xp"], "code": QR_CODES[str(m["n"])],
                      "proof": {"source": q["source"], "quote": q["quote"]}, "text": text})
 
 cards = []

@@ -21,7 +21,7 @@ Read the quest in [English](docs/operacija-dvina.en.md). The Lithuanian original
 
 - **Language picker** for all 11 languages.
 - **Episodes** you can read or listen to at home.
-- **Missions** unlock by GPS at the Cold War Museum. A demo switch unlocks them anywhere.
+- **Missions** unlock when you scan the QR code on the wall at each museum station. A demo switch unlocks them anywhere.
 - **Quizzes** show a proof quote from the source.
 - **Legend cards** let you pick one of six verdicts before the reveal.
 - **XP** and progress are saved on the device.
@@ -33,7 +33,7 @@ Run it locally:
 python -m http.server 8765 --directory app
 ```
 
-All mission points currently sit on the museum (OSM node 410889888) with a 600 m radius. Per-mission points still need to be surveyed on site. Listening uses the browser's own voices for now.
+Printable A4 posters with one QR code per station are in [docs/qr/posters.html](docs/qr/posters.html), made by `pipeline/make_qr.py`. Listening uses the browser's own voices for now.
 
 ## How Meta's models are used
 
@@ -91,7 +91,7 @@ Each step calls the API, and Muse models reason at length. Translating one langu
 ## Next
 
 - Voice: generated audio for all 11 languages instead of browser voices.
-- Survey a GPS point for each mission on site.
+- Hang the QR posters at the museum stations.
 - Illustrations with Muse Image, clearly labelled as illustrations.
 
 ## License
