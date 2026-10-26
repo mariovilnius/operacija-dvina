@@ -7,3 +7,6 @@ data/raw/
 
 __pycache__/
 *.pyc
+
+# Generated media (demo video)
+build/

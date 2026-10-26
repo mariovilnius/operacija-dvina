@@ -17,10 +17,10 @@ The narration is in English, voiced by `en-GB-RyanNeural`. Screen scenes are rec
 
 ## Production checklist
 
-- [ ] Lithuanian and English narration clips generated (`make_audio.py lt en`)
-- [ ] Narration for the video itself (8 lines above) generated with the same voice
-- [ ] App scenes recorded at 390×844 (Playwright screen recording, demo mode for missions)
+- [x] Lithuanian and English narration clips generated (`make_audio.py lt en`)
+- [x] Narration for the video itself generated (`tools/video/make_video.py`, en-GB-RyanNeural via edge-tts)
+- [x] App scenes recorded at 390×844 (Playwright screen recording)
 - [ ] QR scan scene: filmed on a real phone, or shown as the poster plus the unlock screen
-- [ ] Scene 2 "chatbot" mock is clearly labelled as an illustration, not a real product
-- [ ] Assembled with ffmpeg into a 1920×1080 MP4, under 3:00
+- [x] Scene 2 uses a plain statement card instead of a mock chatbot
+- [x] Assembled with ffmpeg into a 1920×1080 MP4 (2:05), into `build/video/` (not committed)
 - [ ] Uploaded to YouTube as unlisted, and the link added to `docs/submission.md`

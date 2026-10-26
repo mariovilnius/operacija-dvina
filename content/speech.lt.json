@@ -1,6 +1,13 @@
 {
   "_about": "Pronunciation fixes for Lithuanian narration only; the text shown in the app is not changed. Each rule is [regex, replacement], applied in order by pipeline/make_audio.py.",
   "rules": [
-    ["(?<!iki )\\b(\\d{4}) metų (rugsėjį|sausio|vasario|kovo|balandžio|gegužės|birželio|liepos|rugpjūčio|rugsėjo|spalio|lapkričio|gruodžio)\\b", "\\1 tais metais, \\2"]
+    [
+      "(?<!iki )\\b(\\d{4}) metų (rugsėjį|sausio|vasario|kovo|balandžio|gegužės|birželio|liepos|rugpjūčio|rugsėjo|spalio|lapkričio|gruodžio)\\b",
+      "\\1 tais metais, \\2"
+    ],
+    [
+      "\\b10[\\s\\u00a0\\u202f]000\\b",
+      "dešimt tūkstančių"
+    ]
   ]
 }
