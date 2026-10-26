@@ -9,6 +9,7 @@ import base64
 import html
 import json
 import pathlib
+import re
 import subprocess
 import sys
 
@@ -68,16 +69,23 @@ def run(*args: str) -> None:
 
 
 async def narrate(name: str, text: str) -> list[tuple[float, float, str]]:
-    """Saves the narration and returns word timings (start s, end s, word)."""
-    words = []
-    with open(OUT / f"{name}.mp3", "wb") as audio:
-        async for chunk in edge_tts.Communicate(text, VOICE, boundary="WordBoundary").stream():
-            if chunk["type"] == "audio":
-                audio.write(chunk["data"])
-            elif chunk["type"] == "WordBoundary":
-                start = chunk["offset"] / 1e7
-                words.append((start, start + chunk["duration"] / 1e7, chunk["text"]))
-    return words
+    """Saves the narration and returns word timings (start s, end s, word).
+
+    The Edge service sometimes answers with no audio (the Russian voice especially), so retry."""
+    for attempt in range(6):
+        words, audio = [], bytearray()
+        try:
+            async for chunk in edge_tts.Communicate(text, VOICE, boundary="WordBoundary").stream():
+                if chunk["type"] == "audio":
+                    audio += chunk["data"]
+                elif chunk["type"] == "WordBoundary":
+                    start = chunk["offset"] / 1e7
+                    words.append((start, start + chunk["duration"] / 1e7, chunk["text"]))
+            (OUT / f"{name}.mp3").write_bytes(audio)
+            return words
+        except edge_tts.exceptions.NoAudioReceived:
+            await asyncio.sleep(5 * (attempt + 1))
+    raise SystemExit(f"no audio for {name} after retries")
 
 
 def with_punctuation(words: list[tuple[float, float, str]], text: str) -> list[tuple[float, float, str]]:
@@ -98,10 +106,13 @@ def with_punctuation(words: list[tuple[float, float, str]], text: str) -> list[t
 
 def subtitles(words: list[tuple[float, float, str]], path: pathlib.Path) -> None:
     """Groups words into short lines and writes an ASS file with big, high-contrast captions."""
+    # Chinese and Japanese are written without spaces between words, and fit fewer characters per line
+    cjk = any(re.search(r"[぀-ヿ一-鿿]", w[2]) for w in words)
+    sep, width = ("", 12) if cjk else (" ", 22)
     lines, current = [], []
     for w in words:
         current.append(w)
-        if len(" ".join(x[2] for x in current)) > 22 or w[2].endswith((".", ",", "?", ":")):
+        if len(sep.join(x[2] for x in current)) > width or w[2].endswith((".", ",", "?", ":", "。", "，", "？", "：", "、")):
             lines.append(current)
             current = []
     if current:
@@ -113,7 +124,7 @@ def subtitles(words: list[tuple[float, float, str]], path: pathlib.Path) -> None
     events = []
     for i, line in enumerate(lines):
         end = lines[i + 1][0][0] if i + 1 < len(lines) else line[-1][1] + 0.4
-        text = " ".join(x[2] for x in line).replace("{", "(").replace("}", ")")
+        text = sep.join(x[2] for x in line).replace("{", "(").replace("}", ")")
         events.append(f"Dialogue: 0,{ts(line[0][0])},{ts(end)},Cap,,0,0,0,,{text}")
     path.write_text(
         "[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\n\n[V4+ Styles]\n"
@@ -186,8 +197,7 @@ def localized(lang: str) -> dict:
         if not out:
             raise SystemExit(f"translation failed for {lang}")
         cache[lang] = out
-        cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + "
-", encoding="utf-8")
+        cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return {n: {**c, "title": (cache[lang][n]["kicker"], cache[lang][n]["title"]), "text": cache[lang][n]["text"]}
             for n, c in CLIPS.items()}
 

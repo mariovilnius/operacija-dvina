@@ -28,27 +28,35 @@ name = f"stories-{lang}"
 
 
 async def narrate():
-    words = []
-    with open(OUT / f"{name}.mp3", "wb") as audio:
-        async for chunk in edge_tts.Communicate(text, VOICES[lang][1], boundary="WordBoundary").stream():
-            if chunk["type"] == "audio":
-                audio.write(chunk["data"])
-            elif chunk["type"] == "WordBoundary":
-                start = chunk["offset"] / 1e7
-                words.append((start, start + chunk["duration"] / 1e7, chunk["text"]))
-    return with_punctuation(words, text)
+    import make_clips  # reuses its retrying narration with this language's voice
+
+    make_clips.VOICE = VOICES[lang][1]
+    return with_punctuation(await make_clips.narrate(name, text), text)
 
 
 def story_starts(words):
     """Paragraph starts in the script mark the stories; find when each one is spoken."""
-    paragraphs = [p.strip() for p in re.sub(r"\s*\[[ST]\d\]", "", story["script"]).split("\n") if p.strip()]
-    starts, i = [], 0
+    # Matched on letters only, so it also works for Chinese and Japanese, which have no spaces
+    def letters(s):
+        return re.sub(r"[\W_]+", "", s).lower()
+
+    clean = re.sub(r"\s*\[[ST]\d\]", "", story["script"])
+    # Stories are separated by blank lines; some translations also break single sentences onto new lines
+    paragraphs = [p.strip() for p in clean.split("\n\n") if p.strip()]
+    if len(paragraphs) < 3:
+        paragraphs = [p.strip() for p in clean.split("\n") if p.strip()]
+    spoken, owner = "", []
+    for i, w in enumerate(words):
+        chunk = letters(w[2])
+        spoken += chunk
+        owner += [i] * len(chunk)
+    starts, cursor = [], 0
     for p in paragraphs:
-        first = p.split()[0].strip(",.:")
-        while i < len(words) and words[i][2].strip(",.:„“") != first:
-            i += 1
-        if i < len(words):
-            starts.append((words[i][0], p))
+        head = letters(p)[:6]
+        at = spoken.find(head, cursor) if head else -1
+        if at >= 0:
+            starts.append((words[owner[at]][0], p))
+            cursor = at + len(head)
     return starts
 
 
@@ -77,7 +85,7 @@ def main():
         page = browser.new_page(viewport={"width": W, "height": H})
         card(page, OUT / f"{name}-0.png", "OPERACIJA DVINA · BONUS", story["title"])
         for k, (_, para) in enumerate(segments[1:], start=1):
-            first = re.split(r"(?<=[.!?])\s", para)[0]
+            first = re.split(r"(?<=[.!?])\s|(?<=[。！？])", para)[0]
             card(page, OUT / f"{name}-{k}.png", f"{k:02d}", first[:120])
         diagrams = {}
         for img in ("base-plan", "shaft-section"):

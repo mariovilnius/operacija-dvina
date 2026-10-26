@@ -25,7 +25,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 VOICES = {
     "lt": ("lt-LT", "lt-LT-LeonasNeural"), "en": ("en-GB", "en-GB-RyanNeural"), "de": ("de-DE", "de-DE-ConradNeural"),
     "es": ("es-ES", "es-ES-AlvaroNeural"), "pt": ("pt-PT", "pt-PT-DuarteNeural"), "pl": ("pl-PL", "pl-PL-MarekNeural"),
-    "lv": ("lv-LV", "lv-LV-NilsNeural"), "ru": ("ru-RU", "ru-RU-DmitryNeural"), "uk": ("uk-UA", "uk-UA-OstapNeural"),
+    "lv": ("lv-LV", "lv-LV-NilsNeural"), "ru": ("ru-RU", "ru-RU-SvetlanaNeural"), "uk": ("uk-UA", "uk-UA-OstapNeural"),
     "zh": ("zh-CN", "zh-CN-YunxiNeural"), "ja": ("ja-JP", "ja-JP-KeitaNeural"),
 }
 AUDIO = ROOT / "app" / "audio"

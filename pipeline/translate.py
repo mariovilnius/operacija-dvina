@@ -7,7 +7,7 @@ Q = json.loads((CONTENT / "quest.lt.json").read_text(encoding="utf-8"))
 L = json.loads((CONTENT / "legends.lt.json").read_text(encoding="utf-8"))
 
 ALL_LANGS = {
-    "en": ("English", "you"), "de": ("German (Deutsch)", "du"),
+    "lt": ("Lithuanian", "tu"), "en": ("English", "you"), "de": ("German (Deutsch)", "du"),
     "es": ("Spanish (Spain)", "tú"), "pt": ("European Portuguese", "tu"), "pl": ("Polish", "ty"),
     "lv": ("Latvian", "tu"), "ru": ("Russian", "ты"), "uk": ("Ukrainian", "ти"),
     "zh": ("Simplified Chinese (zh-CN)", "你"), "ja": ("Japanese (friendly casual style for young people)", "plain form, no keigo"),
