@@ -57,11 +57,17 @@ for i, card in enumerate(legends):
 
 verdicts = {"lt": {k: k for k in VERDICTS["en"]}} | {lang: VERDICTS[lang] for lang in translations}
 
+# Pre-generated narration (pipeline/make_audio.py); the app falls back to browser voices.
+AUDIO = ROOT / "app" / "audio"
+audio = {d.name: sorted(f.stem for f in d.glob("*.mp3")) for d in AUDIO.glob("*") if d.is_dir()} if AUDIO.exists() else {}
+
 bundle = {
+    "audio": audio,
     "languages": [{"code": c, "name": n, "speech": s} for c, n, s in LANGUAGES],
     "ui": ui, "verdicts": verdicts, "verdict_order": list(VERDICTS["en"]),
     "sources": sources, "episodes": episodes, "missions": missions, "cards": cards,
 }
-APP_DATA.mkdir(parents=True, exist_ok=True)
-(APP_DATA / "quest.json").write_text(json.dumps(bundle, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-print(f"{len(episodes)} episodes, {len(missions)} missions, {len(cards)} cards, {len(LANGUAGES)} languages")
+if __name__ == "__main__":
+    APP_DATA.mkdir(parents=True, exist_ok=True)
+    (APP_DATA / "quest.json").write_text(json.dumps(bundle, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"{len(episodes)} episodes, {len(missions)} missions, {len(cards)} cards, {len(LANGUAGES)} languages")

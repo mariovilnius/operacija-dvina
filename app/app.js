@@ -52,13 +52,31 @@
   }
   const plain = (text) => text.replace(/\s*\[[ST]\d\]/g, "");
 
-  // Speech: browser voices for now, until the generated audio is in place.
+  // Narration: pre-generated neural-voice MP3 when one exists for this language, else the browser's voice.
   let speaking = null;
-  function speak(text, button) {
+  let player = null;
+  const stopAll = () => {
+    window.speechSynthesis?.cancel(); player?.pause();
+    if (speaking?.dataset.label) speaking.textContent = speaking.dataset.label;
+    speaking = null;
+  };
+  function speak(text, button, clip) {
+    if (clip && data.audio[lang()]?.includes(clip)) {
+      const label = button.textContent;
+      if (speaking === button) { player.pause(); speaking = null; button.textContent = label; return; }
+      stopAll();
+      button.dataset.label = label;
+      player = new Audio(`audio/${lang()}/${clip}.mp3`);
+      player.onended = player.onerror = () => { speaking = null; button.textContent = label; };
+      speaking = button;
+      button.textContent = "■ " + t("stop");
+      player.play().catch(() => { speaking = null; button.textContent = label; });
+      return;
+    }
     const synth = window.speechSynthesis;
     if (!synth) return alert(t("no_voice"));
     if (speaking === button) { synth.cancel(); return; }
-    synth.cancel();
+    stopAll();
     const code = data.languages.find((l) => l.code === lang()).speech;
     const utter = new SpeechSynthesisUtterance(plain(text));
     utter.lang = code;
@@ -163,7 +181,7 @@
       <div class="row"><button class="btn" id="listen">▶ ${esc(t("listen"))}</button></div>
       <div class="prose panel"><p>${withTags(script)}</p></div>`;
     const btn = document.getElementById("listen");
-    btn.addEventListener("click", () => speak(script, btn));
+    btn.addEventListener("click", () => speak(script, btn, `episode-${n}`));
   }
 
   function mission(n) {
@@ -189,13 +207,17 @@
       </div>
       ${cards.map((c) => cardHtml(c)).join("")}`;
     const btn = document.getElementById("listen");
-    btn.addEventListener("click", () => speak(text.story, btn));
+    btn.addEventListener("click", () => speak(text.story, btn, `mission-${n}`));
     view.querySelectorAll("#quiz .option").forEach((b) => b.addEventListener("click", () => {
       const i = +b.dataset.i;
       // Store the option index so the answer survives a language switch.
       state.quizzes[n] = { i, right: text.options[i] === text.answer }; save(); mission(n); updateXp();
     }));
     if (answered !== undefined) showQuiz(m, text, answered.i);
+    view.querySelectorAll("[data-listen-card]").forEach((b) => {
+      const c = data.cards[+b.dataset.listenCard];
+      b.addEventListener("click", () => speak(tx(c).reveal, b, `card-${c.id}`));
+    });
     cards.forEach((c) => {
       view.querySelectorAll(`[data-card="${c.id}"] .option`).forEach((b) => b.addEventListener("click", () => {
         state.cards[c.id] = b.dataset.v; save(); mission(n); updateXp();
@@ -229,6 +251,7 @@
     }).join("");
     const reveal = chosen === undefined ? "" : `
       <p class="result ${chosen === c.verdict ? "good" : "bad"}">${esc(chosen === c.verdict ? t("card_right", { xp: c.xp }) : t("card_wrong", { verdict: labels[c.verdict] }))}</p>
+      <div class="row"><button class="btn ghost" data-listen-card="${c.id}">▶ ${esc(t("listen"))}</button></div>
       <div class="prose"><p>${withTags(text.reveal)}</p></div>`;
     return `
       <h3>🎴 ${esc(t("card_title"))} · +${c.xp} XP</h3>
@@ -258,7 +281,7 @@
   }
 
   function render() {
-    window.speechSynthesis?.cancel();
+    stopAll();
     const route = location.hash.replace(/^#\/?/, "").split("/");
     if (route[0] === "unlock") {
       // A first-time visitor arriving from a wall QR picks a language first; the code waits.
