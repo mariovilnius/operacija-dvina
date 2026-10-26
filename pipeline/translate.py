@@ -50,7 +50,7 @@ Rules:
 
 {payload}"""
 
-key = os.environ["MODEL_API_KEY"]
+key = os.environ.get("MODEL_API_KEY", "")
 
 
 def call(lang, payload):
@@ -72,32 +72,38 @@ def call(lang, payload):
     return None, 0
 
 
-jobs = []
-for lang in LANGS:
-    for e in Q["episodes"]:
-        jobs.append((lang, "episode", e["n"], {"title": e["title"], "script": e["script"]}))
-    for m in Q["missions"]:
-        jobs.append((lang, "mission", m["n"], {"title": m["title"], "story": m["story"], "task": m["task"],
-                                               "question": m["quiz"]["question"], "options": m["quiz"]["options"],
-                                               "answer": m["quiz"]["answer"]}))
-    for i, l in enumerate(L):
-        jobs.append((lang, "legend", i, {"claim": l["claim"], "reveal": l["reveal"]}))
 
-results, tokens = {lang: {"episodes": {}, "missions": {}, "legends": {}} for lang in LANGS}, 0
-previous = json.loads((CONTENT / "translations.json").read_text(encoding="utf-8")) if (CONTENT / "translations.json").exists() else {}
-with ThreadPoolExecutor(12) as pool:
-    for (lang, kind, idx, payload), (out, used) in zip(jobs, pool.map(lambda j: call(j[0], j[3]), jobs)):
-        tokens += used
-        if out:
-            results[lang][kind + "s"][str(idx)] = out
-        else:
-            print("FAILED", lang, kind, idx)
+def main():
+    jobs = []
+    for lang in LANGS:
+        for e in Q["episodes"]:
+            jobs.append((lang, "episode", e["n"], {"title": e["title"], "script": e["script"]}))
+        for m in Q["missions"]:
+            jobs.append((lang, "mission", m["n"], {"title": m["title"], "story": m["story"], "task": m["task"],
+                                                   "question": m["quiz"]["question"], "options": m["quiz"]["options"],
+                                                   "answer": m["quiz"]["answer"]}))
+        for i, l in enumerate(L):
+            jobs.append((lang, "legend", i, {"claim": l["claim"], "reveal": l["reveal"]}))
 
-for lang in LANGS:
-    for i, l in enumerate(L):
-        if str(i) in results[lang]["legends"]:
-            results[lang]["legends"][str(i)]["verdict"] = VERDICTS[lang][l["verdict"]]
-previous.update(results)
-(CONTENT / "translations.json").write_text(json.dumps(previous, ensure_ascii=False, indent=2), encoding="utf-8")
-print("jobs:", len(jobs), "output tokens:", tokens,
-      {lang: {k: len(v) for k, v in r.items()} for lang, r in results.items()})
+    results, tokens = {lang: {"episodes": {}, "missions": {}, "legends": {}} for lang in LANGS}, 0
+    previous = json.loads((CONTENT / "translations.json").read_text(encoding="utf-8")) if (CONTENT / "translations.json").exists() else {}
+    with ThreadPoolExecutor(12) as pool:
+        for (lang, kind, idx, payload), (out, used) in zip(jobs, pool.map(lambda j: call(j[0], j[3]), jobs)):
+            tokens += used
+            if out:
+                results[lang][kind + "s"][str(idx)] = out
+            else:
+                print("FAILED", lang, kind, idx)
+
+    for lang in LANGS:
+        for i, l in enumerate(L):
+            if str(i) in results[lang]["legends"]:
+                results[lang]["legends"][str(i)]["verdict"] = VERDICTS[lang][l["verdict"]]
+    previous.update(results)
+    (CONTENT / "translations.json").write_text(json.dumps(previous, ensure_ascii=False, indent=2), encoding="utf-8")
+    print("jobs:", len(jobs), "output tokens:", tokens,
+          {lang: {k: len(v) for k, v in r.items()} for lang, r in results.items()})
+
+
+if __name__ == "__main__":
+    main()

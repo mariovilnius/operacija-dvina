@@ -13,6 +13,26 @@ AI travel guides make things up. This one doesn't: every sentence comes from an 
 
 Read the quest in [English](docs/operacija-dvina.en.md). The Lithuanian original is [operacija-dvina.lt.md](docs/operacija-dvina.lt.md), and the other languages are in [docs/](docs/).
 
+## The app
+
+`app/` is a static mobile web app with no build step:
+
+- **Language picker** for all 11 languages.
+- **Episodes** you can read or listen to at home.
+- **Missions** unlock by GPS at the Cold War Museum. A demo switch unlocks them anywhere.
+- **Quizzes** show a proof quote from the source.
+- **Legend cards** let you pick one of six verdicts before the reveal.
+- **XP** and progress are saved on the device.
+- **Source tags** like [S1] or [T3] in every text open the original source.
+
+Run it locally:
+
+```bash
+python -m http.server 8765 --directory app
+```
+
+All mission points currently sit on the museum (OSM node 410889888) with a 600 m radius. Per-mission points still need to be surveyed on site. Listening uses the browser's own voices for now.
+
 ## How Meta's models are used
 
 | Step | Model | What it does |
@@ -21,6 +41,7 @@ Read the quest in [English](docs/operacija-dvina.en.md). The Lithuanian original
 | Episodes and missions | `muse-wonder-1.0` | Rewrites the facts for 15–25 year olds: second person, cliffhangers, tasks and quizzes |
 | Legend or fact? | `muse-wonder-1.0` | Weighs each local legend against witnesses and official sources and writes the reveal |
 | Translations | `muse-spark-1.3` | Translates into 10 languages and keeps tags, numbers and names intact |
+| App interface | `muse-spark-1.3` | Translates the app's interface strings and keeps placeholders like `{xp}` intact |
 
 ## Verification
 
@@ -57,16 +78,18 @@ python write_missions.py            # on-site missions
 python write_legends.py             # legend-or-fact cards
 python fix_legends.py               # editorial corrections
 python translate.py en de es pt pl lv ru uk zh ja
+python translate_ui.py              # app interface strings
 python verify.py                    # must print OK
 python build_doc.py && python build_lang_doc.py
+python build_app_data.py            # app/data/quest.json
 ```
 
 Each step calls the API, and Muse models reason at length. Translating one language costs about 55–80k output tokens.
 
 ## Next
 
-- Mobile web app: language picker, GPS-triggered missions and the legend cards.
-- Voice: text-to-speech for all 11 languages.
+- Voice: generated audio for all 11 languages instead of browser voices.
+- Survey a GPS point for each mission on site.
 - Illustrations with Muse Image, clearly labelled as illustrations.
 
 ## License
