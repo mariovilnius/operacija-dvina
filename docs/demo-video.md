@@ -23,4 +23,4 @@ The narration is in English, voiced by `en-GB-RyanNeural`. Screen scenes are rec
 - [ ] QR scan scene: filmed on a real phone, or shown as the poster plus the unlock screen
 - [x] Scene 2 uses a plain statement card instead of a mock chatbot
 - [x] Assembled with ffmpeg into a 1920×1080 MP4 (2:05), into `build/video/` (not committed)
-- [ ] Uploaded to YouTube as unlisted, and the link added to `docs/submission.md`
+- [x] Uploaded to YouTube: https://youtu.be/FxC7kLP3XLo

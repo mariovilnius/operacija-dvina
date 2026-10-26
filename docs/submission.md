@@ -22,7 +22,7 @@ https://github.com/mariovilnius/operacija-dvina
 
 ## 3-Minute Demo Video
 
-[YouTube link: still to record]
+https://youtu.be/FxC7kLP3XLo
 
 ## Describe your use of Meta products to build the submitted project
 
@@ -30,7 +30,6 @@ https://github.com/mariovilnius/operacija-dvina
 - **muse-wonder-1.0** also weighed 10 local legends against 5 recorded testimonies and the official sources, and gave each card one of six verdicts: fact, legend, testimony, sources disagree, partly true or unproven. Each card names the narrator.
 - **muse-spark-1.3** translated the whole quest and the app interface into 10 languages, keeping source tags, numbers and Lithuanian names intact. 160+ translation calls were checked automatically.
 - The Meta Model API's Anthropic-compatible endpoint let us drive everything from a plain Python pipeline with no SDK.
-- [Only if done by submission: Meta MMS-TTS open weights for Lithuanian audio, because phones have no Lithuanian voice; Muse Image illustrations.]
 
 ## Why are Meta's models important to your solution?
 

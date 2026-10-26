@@ -15,7 +15,7 @@ Read the quest in [English](docs/operacija-dvina.en.md). The Lithuanian original
 
 ## The app
 
-**Try it: [mariovilnius.github.io/operacija-dvina](https://mariovilnius.github.io/operacija-dvina/)**. Switch on demo mode to open the missions away from the museum.
+**Try it: [mariovilnius.github.io/operacija-dvina](https://mariovilnius.github.io/operacija-dvina/)** · **Demo video: [youtu.be/FxC7kLP3XLo](https://youtu.be/FxC7kLP3XLo)**. Switch on demo mode to open the missions away from the museum.
 
 `app/` is a static mobile web app with no build step:
 
